@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918d";
+  const CACHE_BUST = "20260918e";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -297,6 +297,12 @@
         </tr>`;
       })
       .join("");
+
+    // Defer map until Swim tab is visible (Leaflet needs a real size)
+    pendingSwimBeaches = beaches;
+    if (document.getElementById("panel-swim")?.classList.contains("is-active")) {
+      renderSwimMap(beaches);
+    }
   }
 
   function renderGroups(data) {
@@ -372,10 +378,23 @@
       lazy.load();
     }
 
-    if (name === "swim" && swimMap) {
-      setTimeout(() => {
-        if (swimMap) swimMap.invalidateSize();
-      }, 50);
+    if (name === "swim") {
+      const build = () => {
+        if (!swimMap && pendingSwimBeaches) {
+          renderSwimMap(pendingSwimBeaches);
+        } else if (swimMap) {
+          swimMap.invalidateSize();
+          if (swimMapLayer) {
+            const b = swimMapLayer.getBounds();
+            if (b.isValid()) swimMap.fitBounds(b.pad(0.12));
+          }
+        }
+      };
+      requestAnimationFrame(() => {
+        build();
+        setTimeout(build, 50);
+        setTimeout(() => { if (swimMap) swimMap.invalidateSize(); }, 250);
+      });
     }
   }
 
