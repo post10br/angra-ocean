@@ -1,8 +1,22 @@
 {
   "date": "2026-09-18",
-  "updatedAt": "2026-09-18T09:30:00-03:00",
-  "region": "Rio de Janeiro – Ilhabela",
+  "updatedAt": "2026-09-18T11:20:00-03:00",
+  "region": "SE Brazil coast (RJ–SP focus · Guanabara → Ilhabela + nearby)",
   "good": [
+    {
+      "id": "good-flamengo-cleanup-2026-09",
+      "title": "World Cleanup Day mutirão set for Flamengo beach and Marina da Glória",
+      "summary": "Projeto Tatuí (Instituto Ecológico Aqualung) and Axia Marina da Glória schedule a 19 Sep collection gincana (9h–12h30) targeting small plastic fragments before they reach Guanabara. Top collectors get sustainability course scholarships; the marina already removes about 3–4 t of floating trash yearly. Shirt art honors two recent boto-cinza calves.",
+      "source": "G1",
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/09/18/dia-mundial-da-limpeza-tera-mutirao-na-praia-do-flamengo-neste-sabado-veja-como-participar.ghtml",
+      "date": "2026-09-18",
+      "location": "Praia do Flamengo / Marina da Glória, Rio",
+      "tags": [
+        "cleanup",
+        "plastic",
+        "Guanabara"
+      ]
+    },
     {
       "id": "good-world-cleanup-biomar-2026-09",
       "title": "World Cleanup Day: Biomar mutirões include São Sebastião beach cleanup",
@@ -11,7 +25,25 @@
       "url": "https://oeco.org.br/salada-verde/world-cleanup-day-mobiliza-voluntarios-para-limpar-praias-em-nove-municipios/",
       "date": "2026-09-16",
       "location": "São Sebastião (Litoral Norte SP)",
-      "tags": ["cleanup", "plastic", "citizen-science"]
+      "tags": [
+        "cleanup",
+        "plastic",
+        "citizen-science"
+      ]
+    },
+    {
+      "id": "good-cleanup-world-rio-ilha-grande-2026-09",
+      "title": "Clean Up The World 2026 mobilizes Rio beaches plus Ilha Grande points",
+      "summary": "The 24th Brazilian edition runs 19 Sep (10h–13h) with biodegradable collection bags and recycling partners. Meetups include Copacabana, Ipanema, Barra, Macumba, Grumari, Niterói (Itaipu/Itacoatiara/Camboinhas), Búzios (Praia Rasa), and Ilha Grande Praia Preta and Dois Rios with CEADS-UERJ — direct shoreline litter removal across dive and swim corridors.",
+      "source": "Absolute Rio / Aurora Cultural",
+      "url": "https://www.absoluterio.com.br/post/clean-up-the-world-2026-re%C3%BAne-volunt%C3%A1rios-para-mutir%C3%A3o-de-limpeza-de-praias-no-rio-de-janeiro",
+      "date": "2026-09-14",
+      "location": "Rio · Niterói · Búzios · Ilha Grande",
+      "tags": [
+        "cleanup",
+        "plastic",
+        "diving"
+      ]
     },
     {
       "id": "good-baixada-sewage-guanabara-2026-09",
@@ -21,7 +53,11 @@
       "url": "https://extra.globo.com/rio/cidades/duque-de-caxias/noticia/2026/09/baixada-tera-obras-para-impedir-que-71-milhoes-de-litros-de-esgoto-cheguem-aos-rios-todos-os-dias.ghtml",
       "date": "2026-09-13",
       "location": "Baixada Fluminense → Baía de Guanabara",
-      "tags": ["sewage", "Guanabara", "sanitation"]
+      "tags": [
+        "sewage",
+        "Guanabara",
+        "sanitation"
+      ]
     },
     {
       "id": "good-shark-nursery-2026-09",
@@ -31,7 +67,11 @@
       "url": "https://oeco.org.br/noticias/registros-ineditos-revelam-area-chave-para-reproducao-de-tubaroes-no-litoral-do-rj/",
       "date": "2026-09-08",
       "location": "Ilha Grande–Sepetiba",
-      "tags": ["sharks", "research", "conservation"]
+      "tags": [
+        "sharks",
+        "research",
+        "conservation"
+      ]
     },
     {
       "id": "good-paraty-ete-2026-09",
@@ -41,7 +81,11 @@
       "url": "https://tribunalivrejornal.com.br/da-engenharia-das-mares-a-biotecnologia-obras-da-nova-estacao-de-tratamento-de-esgoto-de-paraty-avancam/",
       "date": "2026-09-03",
       "location": "Paraty",
-      "tags": ["sewage", "sanitation", "conservation"]
+      "tags": [
+        "sewage",
+        "sanitation",
+        "conservation"
+      ]
     },
     {
       "id": "good-angra-cleanup-sharks-2026-09",
@@ -51,7 +95,25 @@
       "url": "https://agirazul.com/arquivos/24289",
       "date": "2026-09-02",
       "location": "Praia do Anil, Angra dos Reis",
-      "tags": ["cleanup", "sharks", "diving"]
+      "tags": [
+        "cleanup",
+        "sharks",
+        "diving"
+      ]
+    },
+    {
+      "id": "good-sabesp-sewage-trash-2026-08",
+      "title": "Sabesp intercepts nearly 2,000 t of trash and grease from Baixada Santista sewers",
+      "summary": "Jan–Jun 2026 removals total 1,966.3 t before pumping/treatment (Santos 574 t, São Vicente 433 t), including plastics, diapers, and grease that otherwise risk overflows toward the estuary and beaches. Monthly average fell ~18% vs 2025. Preventive work covers 353 lift stations and 18 treatment plants — practical sewage-to-sea risk reduction for the Santos/São Vicente corridor.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/santos-regiao/noticia/2026/08/30/quase-2-mil-toneladas-de-lixo-sao-retiradas-do-esgoto-da-baixada-santista-em-seis-meses.ghtml",
+      "date": "2026-08-30",
+      "location": "Baixada Santista",
+      "tags": [
+        "sewage",
+        "plastic",
+        "sanitation"
+      ]
     },
     {
       "id": "good-ilhabela-humpbacks-2026-08",
@@ -61,7 +123,11 @@
       "url": "https://glamour.globo.com/um-so-planeta/noticia/2026/08/temporada-de-baleias-por-que-ilhabela-se-tornou-um-dos-melhores-lugares-para-avistar-jubartes-no-brasil.ghtml",
       "date": "2026-08-24",
       "location": "Ilhabela",
-      "tags": ["whales", "tourism", "conservation"]
+      "tags": [
+        "whales",
+        "tourism",
+        "conservation"
+      ]
     },
     {
       "id": "good-ilha-grande-refuge-2026-08",
@@ -71,7 +137,11 @@
       "url": "https://odia.ig.com.br/angra-dos-reis/2026/08/7292707-baia-da-ilha-grande-se-consolida-como-refugio-de-tubaroes.html",
       "date": "2026-08-18",
       "location": "Baía da Ilha Grande, Angra dos Reis",
-      "tags": ["sharks", "research", "tourism"]
+      "tags": [
+        "sharks",
+        "research",
+        "tourism"
+      ]
     },
     {
       "id": "good-cmas-cabo-frio-2026",
@@ -81,7 +151,25 @@
       "url": "https://www.sportalsub.net/blog/spearfishing-cabo-frio-brasil-2026",
       "date": "2026-08-02",
       "location": "Cabo Frio",
-      "tags": ["spearfishing", "visibility", "event"]
+      "tags": [
+        "spearfishing",
+        "visibility",
+        "event"
+      ]
+    },
+    {
+      "id": "good-guapimirim-mangrove-2026-07",
+      "title": "Guapimirim mangrove replanting draws back 70+ species on Guanabara shore",
+      "summary": "Projeto Meros do Brasil and Cooperativa Manguezal Fluminense planted 1,250 native red/black/white mangrove seedlings from 2023 in APA Guapimirim; trees now exceed 3 m on ~400 m² once cleared of invasives. Crabs, fish, and birds returned — nursery habitat that buffers erosion and storm energy at the bay’s northern fringe.",
+      "source": "G1",
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/globo-comunidade-rj/noticia/2026/07/12/replantio-recupera-area-degradada-de-manguezal-em-guapimirim.ghtml",
+      "date": "2026-07-12",
+      "location": "APA Guapimirim, Baía de Guanabara",
+      "tags": [
+        "mangroves",
+        "restoration",
+        "Guanabara"
+      ]
     },
     {
       "id": "good-mangona-jump-2026-07",
@@ -91,7 +179,10 @@
       "url": "https://www1.folha.uol.com.br/ambiente/2026/07/turista-faz-registro-raro-de-salto-de-tubarao-em-ilhabela-sp.shtml",
       "date": "2026-07-11",
       "location": "Ilhabela",
-      "tags": ["sharks", "wildlife"]
+      "tags": [
+        "sharks",
+        "wildlife"
+      ]
     },
     {
       "id": "good-ubatuba-azul-2026-06",
@@ -101,7 +192,66 @@
       "url": "https://www.ubatuba.sp.gov.br/noticias/decretoavistamentocetaceos/",
       "date": "2026-06-26",
       "location": "Ubatuba",
-      "tags": ["whales", "regulation", "tourism"]
+      "tags": [
+        "whales",
+        "regulation",
+        "tourism"
+      ]
+    },
+    {
+      "id": "good-golfinhos-ubatuba-2026-06",
+      "title": "Dolphin group filmed alongside fishing boat off Ubatuba",
+      "summary": "Fisher Gustavo Santos recorded dolphins swimming close to his vessel; Mercado do Peixe and local radio shared the clip widely. Coastal feeding associations with boats are known on the Litoral Norte — a wildlife-presence signal for boaters and snorkelers, with the usual reminder not to chase or feed cetaceans.",
+      "source": "Costa Norte",
+      "url": "https://costanorte.com.br/meio-ambiente/grupo-de-golfinhos-da-show-ao-lado-de-embarcacao-em-ubatuba-e-viraliza-nas-redes-sociais.html",
+      "date": "2026-06-25",
+      "location": "Ubatuba",
+      "tags": [
+        "dolphins",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "good-lena-disentangle-ubatuba-2026-06",
+      "title": "Instituto Argonauta frees juvenile humpback “Lena” from fishing gear off Ubatuba",
+      "summary": "Specialized disentanglement teams removed nets and lines from a known juvenile near Ponta Grossa; after release she swam away cleanly on her migration path. Case underscores ghost-gear and entanglement risk on the LN SP whale corridor — call trained responders, do not attempt DIY rescues.",
+      "source": "Costa Norte",
+      "url": "https://costanorte.com.br/meio-ambiente/baleia-jubarte-presa-em-rede-de-pesca-e-resgatada-em-ubatuba.html",
+      "date": "2026-06-16",
+      "location": "Ponta Grossa, Ubatuba",
+      "tags": [
+        "whales",
+        "rescue",
+        "fisheries"
+      ]
+    },
+    {
+      "id": "good-mar-de-baleias-arraial-2026-06",
+      "title": "Projeto Mar de Baleias restarts cetacean watch from Arraial mirantes",
+      "summary": "Funtec Ambiental volunteers monitor small and large cetaceans Tue/Thu/Sat from Mirante do Pontal do Atalaia, logging species, distance, behavior, and human interactions for conservation policy. Shore-based spotting from Atalaia, Boa Vista, and Flávia Alessandra mirantes is encouraged over vessel approaches during whale season.",
+      "source": "O Dia",
+      "url": "https://odia.ig.com.br/arraial-do-cabo/2026/06/7263751-projeto-mar-de-baleias-inicia-estudo-de-cetaceos-em-arraial-do-cabo-rj.html",
+      "date": "2026-06-12",
+      "location": "Arraial do Cabo",
+      "tags": [
+        "whales",
+        "research",
+        "tourism"
+      ]
+    },
+    {
+      "id": "good-boto-cinza-pups-2026-06",
+      "title": "Two gray-dolphin (boto-cinza) calves renew hope in Guanabara Bay",
+      "summary": "Maqua/UERJ and Instituto Mar Urbano highlight calves (~2 and ~6 months) in a resident Sotalia guianensis population stuck near ~30 animals for a decade. Biologists stress each pup is precious amid ship noise, bycatch, and pollution; Paquetá–Guapimirim remains a quieter core area. Strong “bay still lives” signal for urban diving and wildlife watching.",
+      "source": "Extra",
+      "url": "https://extra.globo.com/rio/noticia/2026/06/nascimento-de-dois-filhotes-de-boto-cinza-renova-a-esperanca-na-baia-de-guanabara.ghtml",
+      "date": "2026-06-08",
+      "location": "Baía de Guanabara",
+      "tags": [
+        "dolphins",
+        "Guanabara",
+        "conservation"
+      ]
     },
     {
       "id": "good-blacktip-return-2026-06",
@@ -111,7 +261,11 @@
       "url": "https://oglobo.globo.com/rio/noticia/2026/06/07/tubaroes-retornam-a-baia-da-ilha-grande-para-reproducao-e-cientistas-celebram-chegada-das-femeas-da-especie.ghtml",
       "date": "2026-06-07",
       "location": "Piraquara de Fora, Angra dos Reis",
-      "tags": ["sharks", "research", "conservation"]
+      "tags": [
+        "sharks",
+        "research",
+        "conservation"
+      ]
     },
     {
       "id": "good-mar-sem-lixo-2026-06",
@@ -121,7 +275,40 @@
       "url": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/06/05/pescadores-retiram-quase-24-toneladas-de-lixo-do-mar-em-ubatuba-e-sao-sebastiao-no-litoral-norte-de-sp.ghtml",
       "date": "2026-06-05",
       "location": "Ubatuba & São Sebastião",
-      "tags": ["cleanup", "plastic", "fisheries"]
+      "tags": [
+        "cleanup",
+        "plastic",
+        "fisheries"
+      ]
+    },
+    {
+      "id": "good-anitta-turtle-guanabara-2026-05",
+      "title": "First adult loggerhead (“Anitta”) tagged in Guanabara Bay with Projeto Aruanã",
+      "summary": "A ~108 kg adult female Caretta caretta and juvenile “Shakira” were marked near Magé’s Píer de Piedade after fisher alerts — part of a rising bay presence of an ocean-going threatened species. Tissue samples go to genetics; satellite tags planned. Reinforces Guanabara as feeding habitat and the urgency of bay cleanup for turtles.",
+      "source": "Extra",
+      "url": "https://extra.globo.com/rio/noticia/2026/05/tartaruga-cabecuda-adulta-e-encontrada-pela-primeira-vez-na-baia-de-guanabara-e-batizada-de-anitta.ghtml",
+      "date": "2026-05-07",
+      "location": "Magé / Baía de Guanabara",
+      "tags": [
+        "turtles",
+        "research",
+        "Guanabara"
+      ]
+    },
+    {
+      "id": "good-costao-rochoso-censo-2026-05",
+      "title": "Costão Rochoso underwater census tracks turtles, fish, and corals in Arraial",
+      "summary": "UFF-linked Projeto Costão Rochoso (Petrobras Socioambiental) dives the RESEX with telemetry and photo-ID — 500+ turtles catalogued since 2018, coral color and reef-fish counts, DNA samples to trace Atlantic origins. Scientists warn <3 m tourist approaches stress resting turtles; upwelling keeps cold nutrient-rich water that fuels Arraial’s dive fame.",
+      "source": "RC24H",
+      "url": "https://rc24h.com.br/censo-marinho-em-arraial-do-cabo-tenta-descobrir-origem-das-tartarugas-e-monitora-saude-do-oceano/",
+      "date": "2026-05-04",
+      "location": "Arraial do Cabo RESEX",
+      "tags": [
+        "turtles",
+        "coral",
+        "diving",
+        "research"
+      ]
     }
   ],
   "bad": [
@@ -133,7 +320,25 @@
       "url": "https://jornaldolitoral.com.br/regiao/2026/09/17/cetesb-divulga-lista-de-50-praias-improprias-para-banho-no-litoral-norte.html",
       "date": "2026-09-17",
       "location": "Litoral Norte SP",
-      "tags": ["water-quality", "bathing", "safety"]
+      "tags": [
+        "water-quality",
+        "bathing",
+        "safety"
+      ]
+    },
+    {
+      "id": "bad-cetesb-sp-116-2026-09",
+      "title": "After heavy rains, 116 São Paulo coast beaches unfit for bathing",
+      "summary": "Statewide CETESB bulletin (17 Sep): 50 LN + 66 Litoral Sul/Baixada Santista points fail enterococci criteria across 175 monitored sites. G1 lists broad Baixada and South Coast restrictions after multi-day rain — avoid shore entries and nearshore diving for 24h+ after storms; check the weekly map before swim or shore scuba.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/09/17/apos-dias-de-chuva-litoral-de-sp-tem-116-praias-improprias-para-banho-neste-fim-de-semana-veja-a-lista.ghtml",
+      "date": "2026-09-17",
+      "location": "Litoral de São Paulo (Norte + Sul)",
+      "tags": [
+        "water-quality",
+        "bathing",
+        "safety"
+      ]
     },
     {
       "id": "bad-saquarema-capsize-2026-09",
@@ -143,7 +348,10 @@
       "url": "https://odia.ig.com.br/saquarema/2026/09/7302729-pescador-e-encontrado-morto-apos-o-barco-virar-em-saquarema.html",
       "date": "2026-09-16",
       "location": "Saquarema / Itaúna",
-      "tags": ["safety", "boats"]
+      "tags": [
+        "safety",
+        "boats"
+      ]
     },
     {
       "id": "bad-oil-botafogo-2026-09",
@@ -153,7 +361,38 @@
       "url": "https://oglobo.globo.com/rio/bairros/zona-sul/noticia/2026/09/08/inea-investiga-manchas-de-oleo-na-enseada-de-botafogo.ghtml",
       "date": "2026-09-08",
       "location": "Enseada de Botafogo, Rio",
-      "tags": ["oil", "pollution"]
+      "tags": [
+        "oil",
+        "pollution"
+      ]
+    },
+    {
+      "id": "bad-santos-100pct-2026-08",
+      "title": "Santos hits 100% unfit beaches in CETESB weekly bulletin",
+      "summary": "All seven monitored Santos points (José Menino through Ponta da Praia) were improper as of 30 Aug, seven of 17 Baixada Santista red flags that week. Enterococci criteria over five weeks; gastroenteritis and other infection risks cited. Estuary/sewage pressure remains a chronic constraint on shore entries along the Santos–São Vicente front.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/santos-regiao/noticia/2026/08/30/santos-tem-100percent-das-praias-improprias-para-banho-veja-situacao-na-baixada-santista.ghtml",
+      "date": "2026-08-30",
+      "location": "Santos / Baixada Santista",
+      "tags": [
+        "water-quality",
+        "bathing",
+        "safety"
+      ]
+    },
+    {
+      "id": "bad-jubarte-itanhaem-2026-08",
+      "title": "10.7 m dead humpback found on Itanhaém Centro beach",
+      "summary": "Instituto Biopesca removed a Megaptera novaeangliae carcass on 28 Aug; advanced decomposition blocked a firm cause, though fishing interaction was suspected. Biologist Eric Comin warned of pathogens, toxic gases, water contamination, and shark attraction — stay clear and call responders. Migration-season reminder for the SP South Coast.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/santos-regiao/noticia/2026/08/28/baleia-jubarte-de-107-metros-e-encontrada-morta-no-litoral-de-sp-biologo-alerta-para-riscos.ghtml",
+      "date": "2026-08-28",
+      "location": "Praia do Centro, Itanhaém",
+      "tags": [
+        "whales",
+        "strandings",
+        "safety"
+      ]
     },
     {
       "id": "bad-mpf-estaleiro-guanabara-2026-08",
@@ -163,7 +402,53 @@
       "url": "https://www.contextoexato.com.br/post/mpf-denuncia-empresas-por-despejo-de-residuos-na-baia-de-guanabara-2026-08-06",
       "date": "2026-08-06",
       "location": "Caju / Baía de Guanabara",
-      "tags": ["pollution", "enforcement", "Guanabara"]
+      "tags": [
+        "pollution",
+        "enforcement",
+        "Guanabara"
+      ]
+    },
+    {
+      "id": "bad-jubarte-praia-grande-2026-08",
+      "title": "Dead humpback washes up on Praia Grande; public-health warnings issued",
+      "summary": "Early August stranding at Vila Caiçara/Real drew crowds before Biopesca necropsy sampling and municipal removal. Coverage stressed pathogen and gas risks plus shark attraction from carcass fluids — same migration-season hazard pattern as later Itanhaém. Do not touch stranded cetaceans.",
+      "source": "CBN Santos / R7",
+      "url": "https://www.cbnsantos.com.br/noticias/noticias/encalhe-de-baleia-jubarte-em-praia-grande-acende-alerta-para-riscos-a-saude-publica.html",
+      "date": "2026-08-03",
+      "location": "Praia Grande (Baixada Santista)",
+      "tags": [
+        "whales",
+        "strandings",
+        "safety"
+      ]
+    },
+    {
+      "id": "bad-itaipu-ete-2026-08",
+      "title": "INEA: Itaipu sewage outfall keeps chronic pressure on Niterói lagoons",
+      "summary": "Gerquali technical opinion to the MP says keeping ETE Itaipu discharge ~200 m before Lagoa de Itaipu via Córrego dos Colibris is unfavorable medium/long term. Best path pairs relocating the outfall with stronger nutrient/pathogen treatment; site sits inside PESET class-special waters. Águas de Niterói says effluent meets current standards — lagoon water quality remains a watch item east of Guanabara.",
+      "source": "O Globo",
+      "url": "https://oglobo.globo.com/rio/bairros/niteroi/noticia/2026/08/02/inea-recomenda-mudancas-no-descarte-de-esgoto-na-estacao-de-tratamento-de-itaipu-em-niteroi.ghtml",
+      "date": "2026-08-02",
+      "location": "Itaipu–Piratininga, Niterói",
+      "tags": [
+        "sewage",
+        "lagoons",
+        "pollution"
+      ]
+    },
+    {
+      "id": "bad-cachalote-cabo-frio-2026-07",
+      "title": "Pygmy sperm whale dies after triple stranding and rehab in Cabo Frio",
+      "summary": "GEMM-Lagos led rescue of an adult female Kogia breviceps at Praia do Forte (22 Jul) after three beachings; Instituto Albatroz CRD care failed on 24 Jul (~3 m, ~350 kg; cookiecutter bites, hypoglycemia). Necropsy ongoing via REMASE/PMP-BC-ES. Rare deep-water species ashore is a research signal and a reminder to call 0800 991 4800 for Lagos strandings.",
+      "source": "Projeto Albatroz",
+      "url": "https://projetoalbatroz.org.br/sobre-o-projeto-albatroz/noticias/instituto-albatroz-participa-de-resgate-de-cachalote-pigmeu-kogia-breviceps-na-praia-do-forte-em-cabo-frio-rj",
+      "date": "2026-07-30",
+      "location": "Praia do Forte, Cabo Frio",
+      "tags": [
+        "strandings",
+        "whales",
+        "research"
+      ]
     },
     {
       "id": "bad-trawl-ilha-grande-2026-07",
@@ -173,7 +458,25 @@
       "url": "https://diariodovale.com.br/destaque/pesca-irregular-e-flagrada-na-baia-da-ilha-grande/",
       "date": "2026-07-13",
       "location": "Baía da Ilha Grande, Angra",
-      "tags": ["fisheries", "enforcement", "MPA"]
+      "tags": [
+        "fisheries",
+        "enforcement",
+        "MPA"
+      ]
+    },
+    {
+      "id": "bad-paranagua-oil-2026-07",
+      "title": "Paranaguá shale-oil leak into storm drains investigated by IAT",
+      "summary": "IAT and firefighters probed a Cattalini Terminais Marítimos shale-oil release into rain galleries in Serraria da Rocha after odor complaints (mid-Jul). Company said small volume was recovered and did not reach the sea; IAT assessed contamination risk at the port complex feeding Paraná’s coastal estuary — relevant SE shipping/oil exposure adjacent to our brief waters.",
+      "source": "G1",
+      "url": "https://g1.globo.com/pr/parana/noticia/2026/07/13/vazamento-de-oleo-no-litoral-do-parana.ghtml",
+      "date": "2026-07-13",
+      "location": "Paranaguá, PR",
+      "tags": [
+        "oil",
+        "pollution",
+        "ports"
+      ]
     },
     {
       "id": "bad-oil-ipanema-arraial-2026-07",
@@ -183,7 +486,10 @@
       "url": "https://oglobo.globo.com/rio/noticia/2026/07/11/ibama-investiga-manchas-de-oleo-encontradas-em-ipanema-material-sera-analisado-por-laboratorio-da-ufrj.ghtml",
       "date": "2026-07-11",
       "location": "Ipanema & Arraial do Cabo",
-      "tags": ["oil", "pollution"]
+      "tags": [
+        "oil",
+        "pollution"
+      ]
     }
   ]
 }
