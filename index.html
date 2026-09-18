@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260918c" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css?v=20260918d" />
 </head>
 <body>
   <div class="wave-bar" aria-hidden="true"></div>
@@ -136,6 +137,11 @@
         aria-labelledby="tab-swim"
         hidden
       >
+        <div class="swim-map-wrap">
+          <div id="swim-map" class="swim-map" role="img" aria-label="Map of swim-safety beaches"></div>
+          <p class="swim-map-note">Pins approximate beach locations; status from CETESB/INEA.</p>
+        </div>
+
         <div class="swim-meta" id="swim-meta" hidden>
           <div class="swim-meta-grid">
             <div>
@@ -235,6 +241,7 @@
     </footer>
   </div>
 
-  <script src="app.js?v=20260918c"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js?v=20260918d"></script>
 </body>
 </html>

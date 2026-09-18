@@ -505,6 +505,64 @@ body {
   border-radius: 50%;
 }
 
+
+/* Swim map */
+.swim-map-wrap {
+  margin-bottom: 1.25rem;
+}
+
+.swim-map {
+  height: 310px;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: rgba(200, 220, 230, 0.45);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.swim-map.is-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swim-map-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.swim-map .leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(21, 58, 86, 0.15);
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+.swim-map .leaflet-popup-content {
+  margin: 0.75rem 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.swim-map .leaflet-popup-content strong {
+  color: var(--deep);
+  font-weight: 600;
+}
+
+.swim-map .leaflet-container a {
+  color: var(--teal);
+}
+
+@media (max-width: 560px) {
+  .swim-map {
+    height: 280px;
+  }
+}
+
 /* Swim panel */
 .swim-meta {
   margin-bottom: 1.25rem;

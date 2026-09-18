@@ -14,7 +14,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 1,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.634,
+      "lon": -45.42
     },
     {
       "id": "crce167",
@@ -24,7 +26,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 2,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.6205,
+      "lon": -45.413
     },
     {
       "id": "crco153",
@@ -34,7 +38,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 3,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.58,
+      "lon": -45.32
     },
     {
       "id": "crin168",
@@ -44,7 +50,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 4,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.645,
+      "lon": -45.425
     },
     {
       "id": "crms163",
@@ -54,7 +62,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 5,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.63,
+      "lon": -45.418
     },
     {
       "id": "crma154",
@@ -64,7 +74,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 6,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.59,
+      "lon": -45.335
     },
     {
       "id": "crpm172",
@@ -74,7 +86,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 7,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.655,
+      "lon": -45.428
     },
     {
       "id": "crpn175",
@@ -84,7 +98,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 8,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.668,
+      "lon": -45.432
     },
     {
       "id": "crpr165",
@@ -94,7 +110,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 9,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.675,
+      "lon": -45.435
     },
     {
       "id": "crtb148",
@@ -104,7 +122,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 10,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.56,
+      "lon": -45.29
     },
     {
       "id": "ibar184",
@@ -114,7 +134,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 11,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.815,
+      "lon": -45.37
     },
     {
       "id": "ibbn190",
@@ -124,7 +146,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 12,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.795,
+      "lon": -45.355
     },
     {
       "id": "ibbs191",
@@ -134,7 +158,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 13,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.805,
+      "lon": -45.358
     },
     {
       "id": "ibcr204",
@@ -144,7 +170,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 14,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.845,
+      "lon": -45.36
     },
     {
       "id": "ibea192",
@@ -154,7 +182,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 15,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.775,
+      "lon": -45.358
     },
     {
       "id": "ibfe202",
@@ -164,7 +194,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 16,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.85,
+      "lon": -45.355
     },
     {
       "id": "ibgd203",
@@ -174,7 +206,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 17,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.84,
+      "lon": -45.365
     },
     {
       "id": "ibit193",
@@ -184,7 +218,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 18,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.78,
+      "lon": -45.355
     },
     {
       "id": "ibiq192",
@@ -194,7 +230,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 19,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.77,
+      "lon": -45.35
     },
     {
       "id": "ibju202",
@@ -204,7 +242,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 20,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.855,
+      "lon": -45.35
     },
     {
       "id": "ibpe194",
@@ -214,7 +254,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 21,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.82,
+      "lon": -45.37
     },
     {
       "id": "ibpo197",
@@ -224,7 +266,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 22,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.86,
+      "lon": -45.345
     },
     {
       "id": "ibsc191",
@@ -234,7 +278,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 23,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.8,
+      "lon": -45.365
     },
     {
       "id": "ibsn186",
@@ -244,7 +290,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 24,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.76,
+      "lon": -45.348
     },
     {
       "id": "ibsi188",
@@ -254,7 +302,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 25,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.755,
+      "lon": -45.34
     },
     {
       "id": "ibve205",
@@ -264,7 +314,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 26,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.865,
+      "lon": -45.34
     },
     {
       "id": "ibvi190",
@@ -274,7 +326,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 27,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.83,
+      "lon": -45.368
     },
     {
       "id": "rj-arpoador",
@@ -285,7 +339,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 28
+      "rank": 28,
+      "lat": -22.9886,
+      "lon": -43.1919
     },
     {
       "id": "rj-barra-tijuca-ii",
@@ -296,7 +352,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 29
+      "rank": 29,
+      "lat": -23.0095,
+      "lon": -43.352
     },
     {
       "id": "rj-botafogo",
@@ -307,7 +365,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/2 points",
       "agency": "INEA",
-      "rank": 30
+      "rank": 30,
+      "lat": -22.9444,
+      "lon": -43.1806
     },
     {
       "id": "rj-diabo",
@@ -318,7 +378,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 31
+      "rank": 31,
+      "lat": -22.988,
+      "lon": -43.1895
     },
     {
       "id": "rj-flamengo",
@@ -329,7 +391,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/2 points",
       "agency": "INEA",
-      "rank": 32
+      "rank": 32,
+      "lat": -22.9278,
+      "lon": -43.17
     },
     {
       "id": "rj-gloria",
@@ -340,7 +404,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 33
+      "rank": 33,
+      "lat": -22.921,
+      "lon": -43.1735
     },
     {
       "id": "rj-ipanema",
@@ -351,7 +417,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/3 points",
       "agency": "INEA",
-      "rank": 34
+      "rank": 34,
+      "lat": -22.9867,
+      "lon": -43.2045
     },
     {
       "id": "rj-leblon",
@@ -362,7 +430,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/3 points",
       "agency": "INEA",
-      "rank": 35
+      "rank": 35,
+      "lat": -22.9875,
+      "lon": -43.223
     },
     {
       "id": "rj-pepino",
@@ -373,7 +443,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 36
+      "rank": 36,
+      "lat": -22.998,
+      "lon": -43.269
     },
     {
       "id": "rj-sao-conrado",
@@ -384,7 +456,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/2 points",
       "agency": "INEA",
-      "rank": 37
+      "rank": 37,
+      "lat": -22.9995,
+      "lon": -43.265
     },
     {
       "id": "rj-urca",
@@ -395,7 +469,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 38
+      "rank": 38,
+      "lat": -22.9485,
+      "lon": -43.163
     },
     {
       "id": "rj-vermelha",
@@ -406,7 +482,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 39
+      "rank": 39,
+      "lat": -22.955,
+      "lon": -43.1645
     },
     {
       "id": "rj-vidigal",
@@ -417,7 +495,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "0/1 points",
       "agency": "INEA",
-      "rank": 40
+      "rank": 40,
+      "lat": -22.9955,
+      "lon": -43.238
     },
     {
       "id": "ssar189",
@@ -427,7 +507,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 41,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.805,
+      "lon": -45.405
     },
     {
       "id": "ssba202",
@@ -437,7 +519,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 42,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.825,
+      "lon": -45.43
     },
     {
       "id": "ssbr264",
@@ -447,7 +531,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 43,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.795,
+      "lon": -45.56
     },
     {
       "id": "ssbr262",
@@ -457,7 +543,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 44,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.785,
+      "lon": -45.555
     },
     {
       "id": "ssca239",
@@ -467,7 +555,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 45,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.78,
+      "lon": -45.7
     },
     {
       "id": "ssde191",
@@ -477,7 +567,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 46,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.815,
+      "lon": -45.42
     },
     {
       "id": "sseg257",
@@ -487,7 +579,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 47,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.8,
+      "lon": -45.54
     },
     {
       "id": "sspc190",
@@ -497,7 +591,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 48,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.815,
+      "lon": -45.41
     },
     {
       "id": "sspg192",
@@ -507,7 +603,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 49,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.8,
+      "lon": -45.4
     },
     {
       "id": "sspn179",
@@ -517,7 +615,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 50,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.82,
+      "lon": -45.415
     },
     {
       "id": "sspn197",
@@ -527,7 +627,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 51,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.81,
+      "lon": -45.395
     },
     {
       "id": "sssf187",
@@ -537,7 +639,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 52,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.8,
+      "lon": -45.39
     },
     {
       "id": "ubdu109",
@@ -547,7 +651,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 53,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.48,
+      "lon": -45.07
     },
     {
       "id": "uben087",
@@ -557,7 +663,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 54,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.49,
+      "lon": -45.085
     },
     {
       "id": "ubip060",
@@ -567,7 +675,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 55,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.435,
+      "lon": -45.07
     },
     {
       "id": "ubit062",
@@ -577,7 +687,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 56,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.45,
+      "lon": -45.065
     },
     {
       "id": "ubit063",
@@ -587,7 +699,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 57,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.452,
+      "lon": -45.07
     },
     {
       "id": "ublz104",
@@ -597,7 +711,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 58,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.505,
+      "lon": -45.12
     },
     {
       "id": "ubma127",
@@ -607,7 +723,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 59,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.54,
+      "lon": -45.22
     },
     {
       "id": "ubpm090",
@@ -617,7 +735,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 60,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.5,
+      "lon": -45.1
     },
     {
       "id": "ubri048",
@@ -627,7 +747,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 61,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.39,
+      "lon": -45.0
     },
     {
       "id": "ubsr089",
@@ -637,7 +759,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 62,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.495,
+      "lon": -45.09
     },
     {
       "id": "ubsp126",
@@ -647,7 +771,9 @@
       "label": "Imprópria",
       "indicator": "Enterococci",
       "rank": 63,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.53,
+      "lon": -45.18
     },
     {
       "id": "rj-barra-tijuca",
@@ -658,7 +784,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "2/3 points própria",
       "agency": "INEA",
-      "rank": 64
+      "rank": 64,
+      "lat": -23.0111,
+      "lon": -43.3656
     },
     {
       "id": "rj-bica",
@@ -669,7 +797,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/2 points própria",
       "agency": "INEA",
-      "rank": 65
+      "rank": 65,
+      "lat": -22.807,
+      "lon": -43.19
     },
     {
       "id": "crca158",
@@ -679,7 +809,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 66,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.605,
+      "lon": -45.36
     },
     {
       "id": "crla160",
@@ -689,7 +821,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 67,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.615,
+      "lon": -45.39
     },
     {
       "id": "crmo151",
@@ -699,7 +833,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 68,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.555,
+      "lon": -45.275
     },
     {
       "id": "crtb149",
@@ -709,7 +845,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 69,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.562,
+      "lon": -45.295
     },
     {
       "id": "ibic195",
@@ -719,7 +857,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 70,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.79,
+      "lon": -45.34
     },
     {
       "id": "ibpi185",
@@ -729,7 +869,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 71,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.785,
+      "lon": -45.36
     },
     {
       "id": "rj-barra-guaratiba",
@@ -740,7 +882,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 72
+      "rank": 72,
+      "lat": -23.0705,
+      "lon": -43.57
     },
     {
       "id": "rj-copacabana",
@@ -751,7 +895,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "4/4 points",
       "agency": "INEA",
-      "rank": 73
+      "rank": 73,
+      "lat": -22.9711,
+      "lon": -43.1822
     },
     {
       "id": "rj-coqueiros",
@@ -762,7 +908,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 74
+      "rank": 74,
+      "lat": -22.7585,
+      "lon": -43.108
     },
     {
       "id": "rj-grumari",
@@ -773,7 +921,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "2/2 points",
       "agency": "INEA",
-      "rank": 75
+      "rank": 75,
+      "lat": -23.0486,
+      "lon": -43.5297
     },
     {
       "id": "rj-joatinga",
@@ -784,7 +934,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 76
+      "rank": 76,
+      "lat": -23.015,
+      "lon": -43.295
     },
     {
       "id": "rj-leme",
@@ -795,7 +947,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 77
+      "rank": 77,
+      "lat": -22.9635,
+      "lon": -43.1665
     },
     {
       "id": "rj-pontal-sernambetiba",
@@ -806,7 +960,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "2/2 points",
       "agency": "INEA",
-      "rank": 78
+      "rank": 78,
+      "lat": -23.035,
+      "lon": -43.475
     },
     {
       "id": "rj-prainha-rj",
@@ -817,7 +973,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 79
+      "rank": 79,
+      "lat": -23.0415,
+      "lon": -43.5055
     },
     {
       "id": "rj-prainha-paqueta",
@@ -828,7 +986,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "1/1 points",
       "agency": "INEA",
-      "rank": 80
+      "rank": 80,
+      "lat": -22.761,
+      "lon": -43.109
     },
     {
       "id": "rj-recreio",
@@ -839,7 +999,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "2/2 points",
       "agency": "INEA",
-      "rank": 81
+      "rank": 81,
+      "lat": -23.0185,
+      "lon": -43.465
     },
     {
       "id": "rj-recreio-reserva",
@@ -850,7 +1012,9 @@
       "indicator": "Enterococci (INEA)",
       "detail": "2/2 points",
       "agency": "INEA",
-      "rank": 82
+      "rank": 82,
+      "lat": -23.012,
+      "lon": -43.415
     },
     {
       "id": "ssbl243",
@@ -860,7 +1024,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 83,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.78,
+      "lon": -45.665
     },
     {
       "id": "ssbo235",
@@ -870,7 +1036,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 84,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.785,
+      "lon": -45.62
     },
     {
       "id": "sscb238",
@@ -880,7 +1048,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 85,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.785,
+      "lon": -45.69
     },
     {
       "id": "ssci183",
@@ -890,7 +1060,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 86,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.73,
+      "lon": -45.42
     },
     {
       "id": "ssgd199",
@@ -900,7 +1072,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 87,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.795,
+      "lon": -45.385
     },
     {
       "id": "ssgu205",
@@ -910,7 +1084,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 88,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.82,
+      "lon": -45.46
     },
     {
       "id": "ssju251",
@@ -920,7 +1096,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 89,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.775,
+      "lon": -45.73
     },
     {
       "id": "ssju250",
@@ -930,7 +1108,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 90,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.778,
+      "lon": -45.735
     },
     {
       "id": "ssjn258",
@@ -940,7 +1120,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 91,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.77,
+      "lon": -45.76
     },
     {
       "id": "ssma226",
@@ -950,7 +1132,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 92,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.79,
+      "lon": -45.565
     },
     {
       "id": "ssma228",
@@ -960,7 +1144,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 93,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.792,
+      "lon": -45.57
     },
     {
       "id": "sspa223",
@@ -970,7 +1156,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 94,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.795,
+      "lon": -45.545
     },
     {
       "id": "sspr248",
@@ -980,7 +1168,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 95,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.8,
+      "lon": -45.585
     },
     {
       "id": "ssst221",
@@ -990,7 +1180,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 96,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.81,
+      "lon": -45.5
     },
     {
       "id": "sssa247",
@@ -1000,7 +1192,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 97,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.805,
+      "lon": -45.59
     },
     {
       "id": "sstg214",
@@ -1010,7 +1204,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 98,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.825,
+      "lon": -45.51
     },
     {
       "id": "sstp219",
@@ -1020,7 +1216,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 99,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.82,
+      "lon": -45.49
     },
     {
       "id": "ssun255",
@@ -1030,7 +1228,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 100,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.765,
+      "lon": -45.75
     },
     {
       "id": "ubdd105",
@@ -1040,7 +1240,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 101,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.51,
+      "lon": -45.13
     },
     {
       "id": "ubfo116",
@@ -1050,7 +1252,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 102,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.52,
+      "lon": -45.16
     },
     {
       "id": "ubfx042",
@@ -1060,7 +1264,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 103,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.38,
+      "lon": -44.97
     },
     {
       "id": "ubgd076",
@@ -1070,7 +1276,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 104,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.46,
+      "lon": -45.06
     },
     {
       "id": "ubim047",
@@ -1080,7 +1288,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 105,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.395,
+      "lon": -45.005
     },
     {
       "id": "ublp039",
@@ -1090,7 +1300,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 106,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.37,
+      "lon": -44.96
     },
     {
       "id": "ublg123",
@@ -1100,7 +1312,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 107,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.525,
+      "lon": -45.175
     },
     {
       "id": "ublg125",
@@ -1110,7 +1324,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 108,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.528,
+      "lon": -45.178
     },
     {
       "id": "iapa093",
@@ -1120,7 +1336,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 109,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.54,
+      "lon": -45.065
     },
     {
       "id": "ubpa057",
@@ -1130,7 +1348,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 110,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.44,
+      "lon": -45.075
     },
     {
       "id": "ubpc017",
@@ -1140,7 +1360,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 111,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.375,
+      "lon": -44.84
     },
     {
       "id": "iafo097",
@@ -1150,7 +1372,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 112,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.545,
+      "lon": -45.07
     },
     {
       "id": "iaen096",
@@ -1160,7 +1384,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 113,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.535,
+      "lon": -45.06
     },
     {
       "id": "iale099",
@@ -1170,7 +1396,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 114,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.538,
+      "lon": -45.05
     },
     {
       "id": "iapr095",
@@ -1180,7 +1408,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 115,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.542,
+      "lon": -45.055
     },
     {
       "id": "ubpr040",
@@ -1190,7 +1420,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 116,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.365,
+      "lon": -44.955
     },
     {
       "id": "ubpu128",
@@ -1200,7 +1432,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 117,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.545,
+      "lon": -45.23
     },
     {
       "id": "iasa094",
@@ -1210,7 +1444,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 118,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.548,
+      "lon": -45.068
     },
     {
       "id": "iasu098",
@@ -1220,7 +1456,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 119,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.555,
+      "lon": -45.065
     },
     {
       "id": "ubsn102",
@@ -1230,7 +1468,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 120,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.515,
+      "lon": -45.14
     },
     {
       "id": "ubtn074",
@@ -1240,7 +1480,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 121,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.47,
+      "lon": -45.055
     },
     {
       "id": "ubto078",
@@ -1250,7 +1492,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 122,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.48,
+      "lon": -45.05
     },
     {
       "id": "ubve072",
@@ -1260,7 +1504,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 123,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.465,
+      "lon": -45.045
     },
     {
       "id": "ubvn053",
@@ -1270,7 +1516,9 @@
       "label": "Própria",
       "indicator": "Enterococci",
       "rank": 124,
-      "agency": "CETESB"
+      "agency": "CETESB",
+      "lat": -23.42,
+      "lon": -45.04
     }
   ],
   "mapUrl": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Atual",

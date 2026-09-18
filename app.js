@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918c";
+  const CACHE_BUST = "20260918d";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -159,6 +159,86 @@
     return "red";
   }
 
+
+  let swimMap = null;
+  let swimMapLayer = null;
+
+  function markerColor(status) {
+    if (status === "safe") return "#3d8b6e";
+    if (status === "caution") return "#d4a017";
+    return "#c45c4a";
+  }
+
+  function destroySwimMap() {
+    if (swimMap) {
+      swimMap.remove();
+      swimMap = null;
+      swimMapLayer = null;
+    }
+  }
+
+  function renderSwimMap(beaches) {
+    const mapEl = document.getElementById("swim-map");
+    if (!mapEl || typeof L === "undefined") return;
+
+    destroySwimMap();
+
+    const withCoords = (Array.isArray(beaches) ? beaches : []).filter(
+      (b) => Number.isFinite(b.lat) && Number.isFinite(b.lon)
+    );
+
+    if (withCoords.length === 0) {
+      mapEl.innerHTML = "";
+      mapEl.classList.add("is-empty");
+      return;
+    }
+    mapEl.classList.remove("is-empty");
+
+    swimMap = L.map(mapEl, {
+      scrollWheelZoom: false,
+      attributionControl: true,
+    });
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(swimMap);
+
+    swimMapLayer = L.featureGroup();
+    withCoords.forEach((b) => {
+      const color = markerColor(b.status);
+      const marker = L.circleMarker([b.lat, b.lon], {
+        radius: 7,
+        color: "#fff",
+        weight: 1.5,
+        fillColor: color,
+        fillOpacity: 0.92,
+      });
+      const popup = `<strong>${escapeHtml(b.name || "")}</strong><br>` +
+        `${escapeHtml(b.municipality || "")}<br>` +
+        `<span style="color:${color}">${escapeHtml(b.label || b.status || "")}</span><br>` +
+        `<small>${escapeHtml(b.agency || "")}</small>`;
+      marker.bindPopup(popup);
+      swimMapLayer.addLayer(marker);
+    });
+    swimMapLayer.addTo(swimMap);
+
+    const bounds = swimMapLayer.getBounds();
+    if (bounds.isValid()) {
+      swimMap.fitBounds(bounds.pad(0.12));
+    } else {
+      swimMap.setView([-23.2, -44.5], 8);
+    }
+
+    // Leaflet needs a size recalc when panel was hidden
+    requestAnimationFrame(() => {
+      if (swimMap) swimMap.invalidateSize();
+    });
+    setTimeout(() => {
+      if (swimMap) swimMap.invalidateSize();
+    }, 200);
+  }
+
   function renderSwim(data) {
     const beaches = Array.isArray(data.beaches) ? [...data.beaches] : [];
     beaches.sort((a, b) => (a.rank || 0) - (b.rank || 0));
@@ -199,6 +279,7 @@
       els.swimTable.hidden = true;
       els.swimTbody.innerHTML = "";
       els.emptySwim.hidden = false;
+      renderSwimMap([]);
       return;
     }
 
@@ -289,6 +370,12 @@
     } else if (lazy && lazy.loaded === false) {
       // Retry after a prior failure
       lazy.load();
+    }
+
+    if (name === "swim" && swimMap) {
+      setTimeout(() => {
+        if (swimMap) swimMap.invalidateSize();
+      }, 50);
     }
   }
 
