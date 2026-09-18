@@ -1426,11 +1426,11 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci (INEA)",
-      "detail": "1/1 points",
+      "detail": "JT000 Centro da praia (1/1) — Praia da Joatinga, ~700 m E of Canal da Joatinga mouth",
       "agency": "INEA",
       "rank": 114,
-      "lat": -23.015,
-      "lon": -43.295
+      "lat": -23.014789,
+      "lon": -43.289369
     },
     {
       "id": "rj-leme",

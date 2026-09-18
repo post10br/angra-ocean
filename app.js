@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918j";
+  const CACHE_BUST = "20260918k";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -163,11 +163,19 @@
   let swimMap = null;
   let swimMapLayer = null;
   let pendingSwimBeaches = null;
+  let lastSwimBulletinDate = "";
 
+  // Marker style kept in sync with banho.html (shareable map-only page).
   function markerColor(status) {
     if (status === "safe") return "#3d8b6e";
     if (status === "caution") return "#d4a017";
-    return "#c45c4a";
+    return "#c45c48";
+  }
+
+  function tipForStatus(status) {
+    if (status === "safe") return "Própria para banho neste boletim. Evite após chuva forte.";
+    if (status === "caution") return "Parcial: só alguns trechos liberados — confira o ponto mais perto de você.";
+    return "Imprópria neste boletim. Prefira outra praia ou aguarde nova coleta.";
   }
 
   function destroySwimMap() {
@@ -212,20 +220,39 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(swimMap);
 
+    const legend = L.control({ position: "bottomleft" });
+    legend.onAdd = () => {
+      const div = L.DomUtil.create("div", "swim-map-legend");
+      div.innerHTML =
+        "<strong>Balneabilidade</strong>" +
+        '<span><i class="dot safe"></i> Própria</span>' +
+        '<span><i class="dot caution"></i> Parcial</span>' +
+        '<span><i class="dot unsafe"></i> Imprópria</span>';
+      return div;
+    };
+    legend.addTo(swimMap);
+
     swimMapLayer = L.featureGroup();
     withCoords.forEach((b) => {
       const color = markerColor(b.status);
       const marker = L.circleMarker([b.lat, b.lon], {
-        radius: 7,
+        radius: 8,
         color: "#fff",
         weight: 1.5,
         fillColor: color,
         fillOpacity: 0.92,
       });
-      const popup = `<strong>${escapeHtml(b.name || "")}</strong><br>` +
+      const dateBit = lastSwimBulletinDate
+        ? `<br><small>Boletim: ${escapeHtml(lastSwimBulletinDate)}</small>`
+        : "";
+      const popup =
+        `<strong>${escapeHtml(b.name || "")}</strong><br>` +
         `${escapeHtml(b.municipality || "")}<br>` +
-        `<span style="color:${color}">${escapeHtml(b.label || b.status || "")}</span><br>` +
-        `<small>${escapeHtml(b.agency || "")}</small>`;
+        `<span style="color:${color}">${escapeHtml(b.label || b.status || "")}</span>` +
+        (b.detail ? ` · ${escapeHtml(b.detail)}` : "") +
+        dateBit +
+        `<br><small>${escapeHtml(b.agency || "INEA")}</small>` +
+        `<div class="popup-tip">${escapeHtml(tipForStatus(b.status))}</div>`;
       marker.bindPopup(popup);
       swimMapLayer.addLayer(marker);
     });
@@ -233,12 +260,11 @@
 
     const bounds = swimMapLayer.getBounds();
     if (bounds.isValid()) {
-      swimMap.fitBounds(bounds.pad(0.12));
+      swimMap.fitBounds(bounds.pad(0.08));
     } else {
       swimMap.setView([-23.2, -44.5], 8);
     }
 
-    // Leaflet needs a size recalc when panel was hidden
     requestAnimationFrame(() => {
       if (swimMap) swimMap.invalidateSize();
     });
@@ -249,6 +275,7 @@
 
   function renderSwim(data) {
     const beaches = Array.isArray(data.beaches) ? [...data.beaches] : [];
+    lastSwimBulletinDate = data.bulletinDate || "";
     beaches.sort((a, b) => (a.rank || 0) - (b.rank || 0));
 
     const unsafeCount = beaches.filter((b) => b.status === "unsafe").length;

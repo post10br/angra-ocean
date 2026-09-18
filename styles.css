@@ -803,3 +803,44 @@ body {
   outline-offset: 3px;
   border-radius: 2px;
 }
+
+
+/* Legend + tips — kept in sync with banho.html */
+.swim-map-legend {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 10px;
+  padding: 8px 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  line-height: 1.45;
+  color: #1a2a2e;
+}
+.swim-map-legend strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #5a6b70;
+}
+.swim-map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.swim-map-legend .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+  display: inline-block;
+}
+.swim-map-legend .dot.safe { background: #3d8b6e; }
+.swim-map-legend .dot.caution { background: #d4a017; }
+.swim-map-legend .dot.unsafe { background: #c45c48; }
+.swim-map .popup-tip {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #44555a;
+}
