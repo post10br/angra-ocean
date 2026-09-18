@@ -1,9 +1,10 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "data/news.json";
-  const SWIM_URL = "data/swim-safety.json";
-  const GROUPS_URL = "data/groups.json";
+  const CACHE_BUST = "20260918b";
+  const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
+  const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
+  const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
 
   const GROK_ICON = `<svg class="grok-icon" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14"><circle cx="8" cy="8" r="7.25" fill="#111" stroke="#fff" stroke-width="1.5"/><path fill="#fff" d="M5.2 10.6c1.1-2.4 2.2-3.6 2.8-4.1.6.5 1.7 1.7 2.8 4.1H9.4c-.25-.55-.55-1.05-.8-1.4-.25.35-.55.85-.8 1.4H5.2zm2.8-5.35c.35-.55.55-.9.55-1.25 0-.35-.2-.6-.55-.6s-.55.25-.55.6c0 .35.2.7.55 1.25z"/></svg>`;
 
@@ -271,11 +272,16 @@
       if (!panel) return;
       const active = key === name;
       panel.classList.toggle("is-active", active);
-      panel.hidden = !active;
+      // Prefer class-based visibility; keep hidden in sync for a11y
+      if (active) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "");
     });
 
     const lazy = lazyLoaders[name];
     if (lazy && !lazy.loaded) {
+      lazy.load();
+    } else if (lazy && lazy.loaded === false) {
+      // Retry after a prior failure
       lazy.load();
     }
   }
@@ -307,12 +313,13 @@
       renderSwim(data);
       lazyLoaders.swim.loaded = true;
     } catch (err) {
-      console.error(err);
+      console.error("swim load failed", err);
       lazyLoaders.swim.loaded = false;
-      els.countSwim.textContent = "0";
-      els.swimMeta.hidden = true;
-      els.swimTable.hidden = true;
-      els.emptySwim.hidden = false;
+      if (els.countSwim) els.countSwim.textContent = "0";
+      if (els.swimMeta) els.swimMeta.hidden = true;
+      if (els.swimTable) els.swimTable.hidden = true;
+      if (els.emptySwim) els.emptySwim.hidden = false;
+      setStatus("Could not load swim-safety data.", true);
     }
   }
 
@@ -324,12 +331,13 @@
       renderGroups(data);
       lazyLoaders.groups.loaded = true;
     } catch (err) {
-      console.error(err);
+      console.error("groups load failed", err);
       lazyLoaders.groups.loaded = false;
-      els.countGroups.textContent = "0";
-      els.groupsMeta.hidden = true;
-      els.groupsTable.hidden = true;
-      els.emptyGroups.hidden = false;
+      if (els.countGroups) els.countGroups.textContent = "0";
+      if (els.groupsMeta) els.groupsMeta.hidden = true;
+      if (els.groupsTable) els.groupsTable.hidden = true;
+      if (els.emptyGroups) els.emptyGroups.hidden = false;
+      setStatus("Could not load conservation groups.", true);
     }
   }
 

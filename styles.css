@@ -217,6 +217,11 @@ body {
   display: block;
 }
 
+/* Ensure hidden attribute always wins over .is-active */
+.panel[hidden] {
+  display: none !important;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
