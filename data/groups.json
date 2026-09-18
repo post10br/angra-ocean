@@ -1,0 +1,137 @@
+{
+  "updatedAt": "2026-09-18T07:15:00-03:00",
+  "window": "2023–2026",
+  "methodNote": "Ranked from public news, scientific coverage, and program outcomes over ~2–3 years; refreshed as new stories arrive.",
+  "groups": [
+    {
+      "id": "argonauta",
+      "rank": 1,
+      "name": "Instituto Argonauta",
+      "focus": "Beach monitoring, wildlife rescue/rehab, marine litter, cetacean response",
+      "summary": "Daily PMP-BS coverage of ~218 Litoral Norte beaches, CRETA rehab, litter bulletins through 2025, and documented whale disentanglement off Ilhabela (2023).",
+      "region": "Litoral Norte SP (Ubatuba–Ilhabela)",
+      "url": "https://institutoargonauta.org/",
+      "scoreNote": "Highest continuous operational footprint on the SP side of the corridor; outcomes are operational and incident-documented."
+    },
+    {
+      "id": "tamar-ubatuba",
+      "rank": 2,
+      "name": "Fundação Projeto Tamar (Ubatuba)",
+      "focus": "Sea turtle feeding-area monitoring, bycatch mitigation, rehab, education",
+      "summary": "Long-running Camburi floating-weir monitoring with measurable returns (128 turtles Oct 2024–Jul 2025) plus rehab/museum outreach in Ubatuba.",
+      "region": "Ubatuba / Litoral Norte SP",
+      "url": "https://www.tamar.org.br/",
+      "scoreNote": "Strong time series and countable bycatch returns; national brand with a concrete local base."
+    },
+    {
+      "id": "baleia-jubarte",
+      "rank": 3,
+      "name": "Projeto Baleia Jubarte",
+      "focus": "Humpback research, photo-ID, SE corridor science, responsible whale watching",
+      "summary": "Expedição Sudeste 2024 surveyed Paraty→Arraial (223 humpbacks, 124 photo-IDs) and trained community tourism operators in Arraial.",
+      "region": "Paraty–Arraial do Cabo (SE expeditions)",
+      "url": "https://www.baleiajubarte.org.br/principal",
+      "scoreNote": "Corridor-scale science and tourism influence; SE work is seasonal relative to Abrolhos core."
+    },
+    {
+      "id": "proshark",
+      "rank": 4,
+      "name": "Instituto PROSHARK",
+      "focus": "Shark/ray telemetry, aggregation science, MPA-relevant data",
+      "summary": "Angra-based (founded 2024) satellite/acoustic monitoring of Ilha Grande Bay sharks; peer-reviewed tagging papers and ISRA-linked Piraquara science.",
+      "region": "Angra dos Reis / Baía da Ilha Grande",
+      "url": "https://www.proshark.org.br/",
+      "scoreNote": "High scientific leverage for a young NGO; shares the Piraquara story with Mar Urbano/IBRACON—do not over-attribute discovery."
+    },
+    {
+      "id": "tubaroes-big-mar-urbano",
+      "rank": 5,
+      "name": "Instituto Mar Urbano / Tubarões da BIG (IBRACON)",
+      "focus": "Shark aggregation monitoring, public science communication, fisher engagement",
+      "summary": "Documented 105+ blacktip aggregations (2023) and 113+ (2025) at Piraquara; tied to ISRA designation coverage with ICMBio partners.",
+      "region": "Baía da Ilha Grande / Angra dos Reis",
+      "url": "https://tubaroesdabig.org.br/",
+      "scoreNote": "Best public field documentation of the Ilha Grande shark aggregation; complements PROSHARK papers."
+    },
+    {
+      "id": "albatroz-lagos",
+      "rank": 6,
+      "name": "Instituto Albatroz (PMP Lagos)",
+      "focus": "Beach monitoring, seabird/turtle rescue and rehab",
+      "summary": "First PMP year (Jun 2024–Jun 2025): 569 animals found across 25 beaches; 55 rehabilitated releases from Araruama CRD.",
+      "region": "Cabo Frio, Búzios, Arraial do Cabo",
+      "url": "https://projetoalbatroz.org.br/",
+      "scoreNote": "Clear quantitative outcomes; licensing-funded scale (not voluntary philanthropy alone)."
+    },
+    {
+      "id": "mar-sem-lixo",
+      "rank": 7,
+      "name": "Programa Mar Sem Lixo (Fundação Florestal)",
+      "focus": "Fisher PES for marine litter removal, education, plastic data",
+      "summary": "SP government PSA program; phase-2 includes Ubatuba and São Sebastião; 32 t removed Jun 2022–Oct 2024 with 255 enrolled fishers.",
+      "region": "SP coast incl. Ubatuba & São Sebastião",
+      "url": "https://fflorestal.sp.gov.br/",
+      "scoreNote": "Government program, not an NGO; strong tonnage but only part of footprint is in this corridor."
+    },
+    {
+      "id": "ilhas-do-rio",
+      "rank": 8,
+      "name": "Projeto Ilhas do Rio (Instituto Mar Adentro)",
+      "focus": "Island biodiversity research, Hope Spot/MPA advocacy, cleanups",
+      "summary": "Mission Blue Hope Spot expanded 17k→57k ha (Apr 2024); Peças/Palmas surveys and a 30.3 kg Palmas cleanup documented.",
+      "region": "Rio coastal islands (Cagarras–Grumari)",
+      "url": "https://ilhasdorio.org.br/",
+      "scoreNote": "Strong advocacy/science on Rio islands; urban/east edge of the corridor rather than Angra–Ilhabela core."
+    },
+    {
+      "id": "costao-rochoso",
+      "rank": 9,
+      "name": "Projeto Costão Rochoso",
+      "focus": "Reef/rocky-shore monitoring, education, sustainable tourism training",
+      "summary": "Ongoing Lagos scientific dives (fish, corals, benthos); 2026 campaign in Búzios/Arraial/Cabo Frio with stated Costa Verde expansion.",
+      "region": "Região dos Lagos (expanding RJ coast)",
+      "url": "https://www.costaorochoso.com.br/",
+      "scoreNote": "Solid monitoring/education program; fewer countable rescue/tonnage outcomes than PMP/Tamar."
+    },
+    {
+      "id": "viva-mantas-ilhabela",
+      "rank": 10,
+      "name": "VIVA Instituto Verde Azul (Mantas de Ilhabela partner)",
+      "focus": "Cetacean & manta research/education, responsible watching",
+      "summary": "2024 Ilhabela whale-season opening with Jubarte/Baleia à Vista; new oceanic manta photo-ID added to Manta Trust database (Jun 2024).",
+      "region": "Ilhabela",
+      "url": "https://www.viva.bio.br/",
+      "scoreNote": "Specialized local megafauna work; smaller operational scale than Argonauta/Tamar."
+    },
+    {
+      "id": "sea-shepherd-ondas-limpas",
+      "rank": 11,
+      "name": "Sea Shepherd Brasil (Ondas Limpas)",
+      "focus": "Underwater and beach plastic/ghost-gear cleanups, education",
+      "summary": "Documented 370 kg underwater litter removal at Praia da Longa, Ilha Grande (Apr 2024) with local association and Brigada Mirim.",
+      "region": "Ilha Grande / national campaign",
+      "url": "https://seashepherd.org.br/ondaslimpas/",
+      "scoreNote": "Verified event-based cleanup impact; not a permanent local research base."
+    },
+    {
+      "id": "brigada-mirim-ilha-grande",
+      "rank": 12,
+      "name": "Brigada Mirim Ecológica da Ilha Grande",
+      "focus": "Youth education, recycling, community mariculture, reforestation",
+      "summary": "Recicla Ilha + Fazenda Marinha; Funbio/TAC Frade support (Nov 2024) for scallop mariculture; partner in Longa Limpa cleanup.",
+      "region": "Ilha Grande / Angra dos Reis",
+      "url": "https://brigadamirim.org.br/",
+      "scoreNote": "Strong community/youth outcomes; marine work mixed with terrestrial livelihoods."
+    },
+    {
+      "id": "ecomar-cetaceos-costa-azul",
+      "rank": 13,
+      "name": "Projeto Cetáceos da Costa Azul (ECoMAR/UFRJ)",
+      "focus": "Cetacean habitat use and vessel-interaction research",
+      "summary": "UFRJ lab project on cetaceans vs tourism/dive boats in Arraial, Cabo Frio, and Búzios; academic rather than rescue/cleanup scale.",
+      "region": "Costa Azul (Arraial–Cabo Frio–Búzios)",
+      "url": "https://ecomarufrj.com.br/projeto-cetaceos-da-costa-azul/",
+      "scoreNote": "Clear geographic fit; thinner public outcome metrics in 2023–26 than operational NGOs above."
+    }
+  ]
+}

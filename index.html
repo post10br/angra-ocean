@@ -33,7 +33,7 @@
       </div>
     </header>
 
-    <div class="tabs" role="tablist" aria-label="News type">
+    <div class="tabs" role="tablist" aria-label="Brief sections">
       <button
         type="button"
         class="tab tab-good"
@@ -57,6 +57,30 @@
       >
         Bad news
         <span class="tab-count" id="count-bad">0</span>
+      </button>
+      <button
+        type="button"
+        class="tab tab-swim"
+        role="tab"
+        id="tab-swim"
+        aria-selected="false"
+        aria-controls="panel-swim"
+        data-tab="swim"
+      >
+        Swim safety
+        <span class="tab-count" id="count-swim">0</span>
+      </button>
+      <button
+        type="button"
+        class="tab tab-groups"
+        role="tab"
+        id="tab-groups"
+        aria-selected="false"
+        aria-controls="panel-groups"
+        data-tab="groups"
+      >
+        Groups
+        <span class="tab-count" id="count-groups">0</span>
       </button>
     </div>
 
@@ -104,6 +128,104 @@
           <p>No caution items for this brief. Enjoy the calm — and still read local flags.</p>
         </div>
       </section>
+
+      <section
+        class="panel"
+        role="tabpanel"
+        id="panel-swim"
+        aria-labelledby="tab-swim"
+        hidden
+      >
+        <div class="swim-meta" id="swim-meta" hidden>
+          <div class="swim-meta-grid">
+            <div>
+              <span class="swim-meta-label">Bulletin</span>
+              <strong id="swim-bulletin-date">—</strong>
+            </div>
+            <div>
+              <span class="swim-meta-label">Source</span>
+              <strong id="swim-source">CETESB</strong>
+            </div>
+            <div>
+              <span class="swim-meta-label">Next update</span>
+              <strong id="swim-next-update">—</strong>
+            </div>
+          </div>
+          <p class="swim-note" id="swim-note"></p>
+          <p class="swim-unsafe-count" id="swim-unsafe-count" hidden></p>
+          <div class="swim-links">
+            <a id="swim-bulletin-link" class="swim-ext-link" href="#" target="_blank" rel="noopener noreferrer">Official bulletin ↗</a>
+            <a id="swim-map-link" class="swim-ext-link" href="#" target="_blank" rel="noopener noreferrer">CETESB map ↗</a>
+          </div>
+        </div>
+
+        <div class="swim-table-wrap">
+          <table class="swim-table" id="swim-table" hidden>
+            <thead>
+              <tr>
+                <th scope="col">Status</th>
+                <th scope="col">Beach</th>
+                <th scope="col">Municipality</th>
+                <th scope="col">Label</th>
+                <th scope="col">Indicator</th>
+              </tr>
+            </thead>
+            <tbody id="swim-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty" id="empty-swim" hidden>
+          <div class="empty-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 14c2.5-2 5-3 8-3s5.5 1 8 3 4 3 4 0" />
+              <path d="M2 18c2.5-2 5-3 8-3s5.5 1 8 3" />
+              <circle cx="12" cy="8" r="2.5" />
+            </svg>
+          </div>
+          <h3>No swim data</h3>
+          <p>Swim-safety bulletin not loaded yet. Check data/swim-safety.json or the official CETESB map.</p>
+        </div>
+      </section>
+
+      <section
+        class="panel"
+        role="tabpanel"
+        id="panel-groups"
+        aria-labelledby="tab-groups"
+        hidden
+      >
+        <div class="groups-meta" id="groups-meta" hidden>
+          <p class="groups-method-note" id="groups-method-note"></p>
+        </div>
+
+        <div class="groups-table-wrap">
+          <table class="groups-table" id="groups-table" hidden>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Organization</th>
+                <th scope="col">Focus</th>
+                <th scope="col">Why / summary</th>
+                <th scope="col">Region</th>
+                <th scope="col">Link</th>
+              </tr>
+            </thead>
+            <tbody id="groups-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty" id="empty-groups" hidden>
+          <div class="empty-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3c-2.5 3.5-6 5.5-6 9.5a6 6 0 0012 0C18 8.5 14.5 6.5 12 3z" />
+              <path d="M12 14.5v3M10 17.5h4" opacity="0.55" />
+            </svg>
+          </div>
+          <h3>No groups listed yet</h3>
+          <p>Conservation groups for this coast will appear here once data/groups.json is filled in.</p>
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">

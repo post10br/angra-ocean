@@ -2,6 +2,10 @@
   "use strict";
 
   const DATA_URL = "data/news.json";
+  const SWIM_URL = "data/swim-safety.json";
+  const GROUPS_URL = "data/groups.json";
+
+  const GROK_ICON = `<svg class="grok-icon" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14"><circle cx="8" cy="8" r="7.25" fill="#111" stroke="#fff" stroke-width="1.5"/><path fill="#fff" d="M5.2 10.6c1.1-2.4 2.2-3.6 2.8-4.1.6.5 1.7 1.7 2.8 4.1H9.4c-.25-.55-.55-1.05-.8-1.4-.25.35-.55.85-.8 1.4H5.2zm2.8-5.35c.35-.55.55-.9.55-1.25 0-.35-.2-.6-.55-.6s-.55.25-.55.6c0 .35.2.7.55 1.25z"/></svg>`;
 
   const els = {
     date: document.getElementById("brief-date"),
@@ -10,13 +14,45 @@
     status: document.getElementById("status"),
     countGood: document.getElementById("count-good"),
     countBad: document.getElementById("count-bad"),
+    countSwim: document.getElementById("count-swim"),
+    countGroups: document.getElementById("count-groups"),
     feedGood: document.getElementById("feed-good"),
     feedBad: document.getElementById("feed-bad"),
     emptyGood: document.getElementById("empty-good"),
     emptyBad: document.getElementById("empty-bad"),
+    emptySwim: document.getElementById("empty-swim"),
+    emptyGroups: document.getElementById("empty-groups"),
     panelGood: document.getElementById("panel-good"),
     panelBad: document.getElementById("panel-bad"),
+    panelSwim: document.getElementById("panel-swim"),
+    panelGroups: document.getElementById("panel-groups"),
+    swimMeta: document.getElementById("swim-meta"),
+    swimBulletinDate: document.getElementById("swim-bulletin-date"),
+    swimSource: document.getElementById("swim-source"),
+    swimNextUpdate: document.getElementById("swim-next-update"),
+    swimNote: document.getElementById("swim-note"),
+    swimUnsafeCount: document.getElementById("swim-unsafe-count"),
+    swimBulletinLink: document.getElementById("swim-bulletin-link"),
+    swimMapLink: document.getElementById("swim-map-link"),
+    swimTable: document.getElementById("swim-table"),
+    swimTbody: document.getElementById("swim-tbody"),
+    groupsMeta: document.getElementById("groups-meta"),
+    groupsMethodNote: document.getElementById("groups-method-note"),
+    groupsTable: document.getElementById("groups-table"),
+    groupsTbody: document.getElementById("groups-tbody"),
     tabs: document.querySelectorAll('[role="tab"]'),
+  };
+
+  const panels = {
+    good: els.panelGood,
+    bad: els.panelBad,
+    swim: els.panelSwim,
+    groups: els.panelGroups,
+  };
+
+  const lazyLoaders = {
+    swim: { loaded: false, load: loadSwim },
+    groups: { loaded: false, load: loadGroups },
   };
 
   function escapeHtml(str) {
@@ -51,6 +87,23 @@
     return item.example === true || /^\[Example\]/i.test(item.title || "");
   }
 
+  function grokPrompt(item) {
+    return (
+      "Dig deeper into this Brazil-coast ocean news for scuba, spearfishing, and freediving context. " +
+      "Summarize what matters, any risks, and useful follow-ups.\n\n" +
+      `Title: ${item.title || ""}\n` +
+      `Location: ${item.location || ""}\n` +
+      `Source: ${item.source || ""}\n` +
+      `Article: ${item.url || ""}\n\n` +
+      `Summary from Angra Ocean:\n${item.summary || ""}`
+    );
+  }
+
+  function grokLink(item) {
+    const href = `https://grok.com/?q=${encodeURIComponent(grokPrompt(item))}`;
+    return `<a class="grok-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${GROK_ICON}<span>Ask Grok</span></a>`;
+  }
+
   function renderCard(item) {
     const example = isExample(item);
     const tags = Array.isArray(item.tags) ? item.tags : [];
@@ -72,9 +125,12 @@
         <h2 class="card-title">${escapeHtml(item.title || "Untitled")}</h2>
         <p class="card-summary">${escapeHtml(item.summary || "")}</p>
         <div class="card-footer">
-          <a class="source-link" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener noreferrer">
-            ${escapeHtml(item.source || "Source")} ↗
-          </a>
+          <div class="card-links">
+            <a class="source-link" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener noreferrer">
+              ${escapeHtml(item.source || "Source")} ↗
+            </a>
+            ${grokLink(item)}
+          </div>
           ${tagHtml}
         </div>
       </li>
@@ -95,6 +151,103 @@
     feedEl.innerHTML = list.map(renderCard).join("");
   }
 
+  function statusDotClass(status) {
+    if (status === "safe") return "green";
+    if (status === "caution") return "orange";
+    return "red";
+  }
+
+  function renderSwim(data) {
+    const beaches = Array.isArray(data.beaches) ? [...data.beaches] : [];
+    beaches.sort((a, b) => (a.rank || 0) - (b.rank || 0));
+
+    const unsafeCount = beaches.filter((b) => b.status === "unsafe").length;
+
+    els.countSwim.textContent = String(beaches.length);
+
+    els.swimBulletinDate.textContent = data.bulletinDate || "—";
+    els.swimSource.textContent = data.source || "CETESB";
+    els.swimNextUpdate.textContent = data.nextUpdate || "—";
+    els.swimNote.textContent = data.note || "";
+
+    if (unsafeCount > 0) {
+      els.swimUnsafeCount.hidden = false;
+      els.swimUnsafeCount.textContent = `${unsafeCount} improper (imprópria) of ${beaches.length} listed`;
+    } else {
+      els.swimUnsafeCount.hidden = true;
+    }
+
+    if (data.sourceUrl) {
+      els.swimBulletinLink.href = data.sourceUrl;
+      els.swimBulletinLink.hidden = false;
+    }
+    if (data.mapUrl) {
+      els.swimMapLink.href = data.mapUrl;
+      els.swimMapLink.hidden = false;
+    }
+
+    els.swimMeta.hidden = false;
+
+    if (beaches.length === 0) {
+      els.swimTable.hidden = true;
+      els.swimTbody.innerHTML = "";
+      els.emptySwim.hidden = false;
+      return;
+    }
+
+    els.emptySwim.hidden = true;
+    els.swimTable.hidden = false;
+    els.swimTbody.innerHTML = beaches
+      .map((b) => {
+        const dot = statusDotClass(b.status);
+        return `<tr>
+          <td><span class="status-dot ${dot}" title="${escapeHtml(b.status || "")}"></span></td>
+          <td>${escapeHtml(b.name || "")}</td>
+          <td>${escapeHtml(b.municipality || "")}</td>
+          <td>${escapeHtml(b.label || "")}</td>
+          <td>${escapeHtml(b.indicator || "")}</td>
+        </tr>`;
+      })
+      .join("");
+  }
+
+  function renderGroups(data) {
+    const groups = Array.isArray(data.groups) ? [...data.groups] : [];
+    groups.sort((a, b) => (a.rank || 0) - (b.rank || 0));
+
+    els.countGroups.textContent = String(groups.length);
+
+    const note = data.methodNote || "";
+    els.groupsMethodNote.textContent = note;
+    els.groupsMeta.hidden = !note;
+
+    if (groups.length === 0) {
+      els.groupsTable.hidden = true;
+      els.groupsTbody.innerHTML = "";
+      els.emptyGroups.hidden = false;
+      return;
+    }
+
+    els.emptyGroups.hidden = true;
+    els.groupsTable.hidden = false;
+    els.groupsTbody.innerHTML = groups
+      .map((g) => {
+        const why = g.why || g.summary || "";
+        const link = g.url
+          ? `<a class="groups-ext-link" href="${escapeHtml(g.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(g.linkLabel || "Visit")} ↗</a>`
+          : "—";
+        return `<tr>
+          <td class="groups-rank">${escapeHtml(String(g.rank ?? ""))}</td>
+          <td>${escapeHtml(g.organization || g.name || "")}</td>
+          <td>${escapeHtml(g.focus || "")}</td>
+          <td class="groups-why">${escapeHtml(why)}</td>
+          <td>${escapeHtml(g.region || "")}</td>
+          <td>${link}</td>
+        </tr>`;
+      })
+      .join("");
+  }
+
   function setStatus(msg, isError) {
     if (!msg) {
       els.status.hidden = true;
@@ -108,18 +261,23 @@
   }
 
   function activateTab(name) {
-    const isGood = name === "good";
-
     els.tabs.forEach((tab) => {
       const selected = tab.dataset.tab === name;
       tab.setAttribute("aria-selected", selected ? "true" : "false");
       tab.tabIndex = selected ? 0 : -1;
     });
 
-    els.panelGood.classList.toggle("is-active", isGood);
-    els.panelBad.classList.toggle("is-active", !isGood);
-    els.panelGood.hidden = !isGood;
-    els.panelBad.hidden = isGood;
+    Object.entries(panels).forEach(([key, panel]) => {
+      if (!panel) return;
+      const active = key === name;
+      panel.classList.toggle("is-active", active);
+      panel.hidden = !active;
+    });
+
+    const lazy = lazyLoaders[name];
+    if (lazy && !lazy.loaded) {
+      lazy.load();
+    }
   }
 
   function bindTabs() {
@@ -139,6 +297,40 @@
         activateTab(tabs[i].dataset.tab);
       });
     });
+  }
+
+  async function loadSwim() {
+    try {
+      const res = await fetch(SWIM_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      renderSwim(data);
+      lazyLoaders.swim.loaded = true;
+    } catch (err) {
+      console.error(err);
+      lazyLoaders.swim.loaded = false;
+      els.countSwim.textContent = "0";
+      els.swimMeta.hidden = true;
+      els.swimTable.hidden = true;
+      els.emptySwim.hidden = false;
+    }
+  }
+
+  async function loadGroups() {
+    try {
+      const res = await fetch(GROUPS_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      renderGroups(data);
+      lazyLoaders.groups.loaded = true;
+    } catch (err) {
+      console.error(err);
+      lazyLoaders.groups.loaded = false;
+      els.countGroups.textContent = "0";
+      els.groupsMeta.hidden = true;
+      els.groupsTable.hidden = true;
+      els.emptyGroups.hidden = false;
+    }
   }
 
   async function load() {
@@ -163,6 +355,10 @@
       els.emptyGood.hidden = false;
       els.emptyBad.hidden = false;
     }
+
+    // Prefetch so tab counts are ready
+    loadSwim();
+    loadGroups();
   }
 
   bindTabs();

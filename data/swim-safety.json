@@ -1,0 +1,892 @@
+{
+  "updatedAt": "2026-09-18T07:12:56-03:00",
+  "bulletinDate": "2026-09-18",
+  "source": "CETESB",
+  "sourceUrl": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Atual",
+  "nextUpdate": "2026-09-24",
+  "note": "Classificação semanal CETESB (boletim 17/09/2026) por enterococos conforme CONAMA 274/2000: imprópria se ≥100 UFC/100 mL em 2+ de 5 amostras ou ≥400 UFC/100 mL em uma. Página boletim-semanal bloqueada por WAF/JS; dados oficiais via camada ArcGIS Praias (data_atual 17/09/2026 12:10 BRT), corroborados por Jornal do Litoral e iG Turismo. INEA (RJ/Angra): portal existe, mas sem boletim atual da semana de 17–18/09/2026 encontrado — praias RJ omitidas.",
+  "beaches": [
+    {
+      "id": "crpb169",
+      "name": "Aruan",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 1
+    },
+    {
+      "id": "crce167",
+      "name": "Centro",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 2
+    },
+    {
+      "id": "crco153",
+      "name": "Cocanha",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 3
+    },
+    {
+      "id": "crin168",
+      "name": "Indaiá",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 4
+    },
+    {
+      "id": "crms163",
+      "name": "Martim de Sá",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 5
+    },
+    {
+      "id": "crma154",
+      "name": "Massaguaçu (R. M. Carlota)",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 6
+    },
+    {
+      "id": "crpm172",
+      "name": "Palmeiras",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 7
+    },
+    {
+      "id": "crpn175",
+      "name": "Porto Novo",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 8
+    },
+    {
+      "id": "crpr165",
+      "name": "Prainha",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 9
+    },
+    {
+      "id": "crtb148",
+      "name": "Tabatinga (Rio Tabatinga)",
+      "municipality": "Caraguatatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 10
+    },
+    {
+      "id": "ibar184",
+      "name": "Armação",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 11
+    },
+    {
+      "id": "ibbn190",
+      "name": "Barreiros Norte",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 12
+    },
+    {
+      "id": "ibbs191",
+      "name": "Barreiros Sul",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 13
+    },
+    {
+      "id": "ibcr204",
+      "name": "Curral",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 14
+    },
+    {
+      "id": "ibea192",
+      "name": "Engenho D'Água",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 15
+    },
+    {
+      "id": "ibfe202",
+      "name": "Feiticeira",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 16
+    },
+    {
+      "id": "ibgd203",
+      "name": "Grande",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 17
+    },
+    {
+      "id": "ibit193",
+      "name": "Itaguaçu",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 18
+    },
+    {
+      "id": "ibiq192",
+      "name": "Itaquanduba",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 19
+    },
+    {
+      "id": "ibju202",
+      "name": "Julião",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 20
+    },
+    {
+      "id": "ibpe194",
+      "name": "Perequê",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 21
+    },
+    {
+      "id": "ibpo197",
+      "name": "Portinho",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 22
+    },
+    {
+      "id": "ibsc191",
+      "name": "Saco da Capela",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 23
+    },
+    {
+      "id": "ibsn186",
+      "name": "Sino",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 24
+    },
+    {
+      "id": "ibsi188",
+      "name": "Siriúba",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 25
+    },
+    {
+      "id": "ibve205",
+      "name": "Veloso",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 26
+    },
+    {
+      "id": "ibvi190",
+      "name": "Viana",
+      "municipality": "Ilhabela",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 27
+    },
+    {
+      "id": "ssar189",
+      "name": "Arrastão",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 28
+    },
+    {
+      "id": "ssba202",
+      "name": "Barequeçaba",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 29
+    },
+    {
+      "id": "ssbr264",
+      "name": "Boraceia (Rua Cubatão)",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 30
+    },
+    {
+      "id": "ssbr262",
+      "name": "Boraceia Norte",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 31
+    },
+    {
+      "id": "ssca239",
+      "name": "Camburi",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 32
+    },
+    {
+      "id": "ssde191",
+      "name": "Deserta",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 33
+    },
+    {
+      "id": "sseg257",
+      "name": "Engenho",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 34
+    },
+    {
+      "id": "sspc190",
+      "name": "Pontal da Cruz",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 35
+    },
+    {
+      "id": "sspg192",
+      "name": "Porto Grande",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 36
+    },
+    {
+      "id": "sspn179",
+      "name": "Prainha",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 37
+    },
+    {
+      "id": "sspn197",
+      "name": "Preta do Norte",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 38
+    },
+    {
+      "id": "sssf187",
+      "name": "São Francisco",
+      "municipality": "São Sebastião",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 39
+    },
+    {
+      "id": "ubdu109",
+      "name": "Dura",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 40
+    },
+    {
+      "id": "uben087",
+      "name": "Enseada",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 41
+    },
+    {
+      "id": "ubip060",
+      "name": "Iperoig",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 42
+    },
+    {
+      "id": "ubit062",
+      "name": "Itaguá (trecho 1)",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 43
+    },
+    {
+      "id": "ubit063",
+      "name": "Itaguá (trecho 2)",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 44
+    },
+    {
+      "id": "ublz104",
+      "name": "Lázaro",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 45
+    },
+    {
+      "id": "ubma127",
+      "name": "Maranduba",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 46
+    },
+    {
+      "id": "ubpm090",
+      "name": "Perequê-Mirim",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 47
+    },
+    {
+      "id": "ubri048",
+      "name": "Rio Itamambuca",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 48
+    },
+    {
+      "id": "ubsr089",
+      "name": "Santa Rita",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 49
+    },
+    {
+      "id": "ubsp126",
+      "name": "Sapé",
+      "municipality": "Ubatuba",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci",
+      "rank": 50
+    },
+    {
+      "id": "crca158",
+      "name": "Capricórnio",
+      "municipality": "Caraguatatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 51
+    },
+    {
+      "id": "crla160",
+      "name": "Lagoa Azul",
+      "municipality": "Caraguatatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 52
+    },
+    {
+      "id": "crmo151",
+      "name": "Mococa",
+      "municipality": "Caraguatatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 53
+    },
+    {
+      "id": "crtb149",
+      "name": "Tabatinga (Cond. Gaivotas)",
+      "municipality": "Caraguatatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 54
+    },
+    {
+      "id": "ibic195",
+      "name": "Ilha das Cabras",
+      "municipality": "Ilhabela",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 55
+    },
+    {
+      "id": "ibpi185",
+      "name": "Pinto",
+      "municipality": "Ilhabela",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 56
+    },
+    {
+      "id": "ssbl243",
+      "name": "Baleia",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 57
+    },
+    {
+      "id": "ssbo235",
+      "name": "Boiçucanga",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 58
+    },
+    {
+      "id": "sscb238",
+      "name": "Camburizinho",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 59
+    },
+    {
+      "id": "ssci183",
+      "name": "Cigarras",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 60
+    },
+    {
+      "id": "ssgd199",
+      "name": "Grande",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 61
+    },
+    {
+      "id": "ssgu205",
+      "name": "Guaecá",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 62
+    },
+    {
+      "id": "ssju251",
+      "name": "Juqueí (R. Cristiana)",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 63
+    },
+    {
+      "id": "ssju250",
+      "name": "Juqueí (Trav. Simão Faustino)",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 64
+    },
+    {
+      "id": "ssjn258",
+      "name": "Jureia do Norte",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 65
+    },
+    {
+      "id": "ssma226",
+      "name": "Maresias",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 66
+    },
+    {
+      "id": "ssma228",
+      "name": "Maresias (Totem)",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 67
+    },
+    {
+      "id": "sspa223",
+      "name": "Paúba",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 68
+    },
+    {
+      "id": "sspr248",
+      "name": "Preta",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 69
+    },
+    {
+      "id": "ssst221",
+      "name": "Santiago",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 70
+    },
+    {
+      "id": "sssa247",
+      "name": "Saí",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 71
+    },
+    {
+      "id": "sstg214",
+      "name": "Toque-Toque Grande",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 72
+    },
+    {
+      "id": "sstp219",
+      "name": "Toque-Toque Pequeno",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 73
+    },
+    {
+      "id": "ssun255",
+      "name": "Una",
+      "municipality": "São Sebastião",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 74
+    },
+    {
+      "id": "ubdd105",
+      "name": "Domingas Dias",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 75
+    },
+    {
+      "id": "ubfo116",
+      "name": "Fortaleza",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 76
+    },
+    {
+      "id": "ubfx042",
+      "name": "Félix",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 77
+    },
+    {
+      "id": "ubgd076",
+      "name": "Grande",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 78
+    },
+    {
+      "id": "ubim047",
+      "name": "Itamambuca",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 79
+    },
+    {
+      "id": "ublp039",
+      "name": "Lagoa Prumirim",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 80
+    },
+    {
+      "id": "ublg123",
+      "name": "Lagoinha (Av. E. Velho)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 81
+    },
+    {
+      "id": "ublg125",
+      "name": "Lagoinha (Camping)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 82
+    },
+    {
+      "id": "iapa093",
+      "name": "Palmas (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 83
+    },
+    {
+      "id": "ubpa057",
+      "name": "Perequê-Açu",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 84
+    },
+    {
+      "id": "ubpc017",
+      "name": "Picinguaba",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 85
+    },
+    {
+      "id": "iafo097",
+      "name": "Prainha de Fora (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 86
+    },
+    {
+      "id": "iaen096",
+      "name": "Prainha do Engenho (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 87
+    },
+    {
+      "id": "iale099",
+      "name": "Prainha do Leste (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 88
+    },
+    {
+      "id": "iapr095",
+      "name": "Presídio (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 89
+    },
+    {
+      "id": "ubpr040",
+      "name": "Prumirim",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 90
+    },
+    {
+      "id": "ubpu128",
+      "name": "Pulso",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 91
+    },
+    {
+      "id": "iasa094",
+      "name": "Sapateiro (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 92
+    },
+    {
+      "id": "iasu098",
+      "name": "Sul (Ilha Anchieta)",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 93
+    },
+    {
+      "id": "ubsn102",
+      "name": "Sununga",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 94
+    },
+    {
+      "id": "ubtn074",
+      "name": "Tenório",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 95
+    },
+    {
+      "id": "ubto078",
+      "name": "Toninhas",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 96
+    },
+    {
+      "id": "ubve072",
+      "name": "Vermelha",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 97
+    },
+    {
+      "id": "ubvn053",
+      "name": "Vermelha do Norte",
+      "municipality": "Ubatuba",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci",
+      "rank": 98
+    }
+  ]
+}
