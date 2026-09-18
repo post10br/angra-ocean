@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-18",
+  "updatedAt": "2026-09-18T06:48:00-03:00",
+  "region": "Rio de Janeiro – Ilhabela",
+  "good": [
+    {
+      "id": "good-shark-nursery-2026-09",
+      "title": "Potential shark nursery mapped in the Ilha Grande–Sepetiba complex",
+      "summary": "A PROSHARK study with UFRJ and UNIRIO documented six pregnant females — spinner, blacktip, and sand tiger (mangona) — from records spanning 2006–2024, the first time all three species were recorded pregnant in the area. Two of the species are threatened in Brazil; the authors argue the estuary may be a reproductive refuge and a conservation priority. The paper appears in the Brazilian Journal of Biology; ((o))eco covered it on 8 Sep.",
+      "source": "((o))eco",
+      "url": "https://oeco.org.br/noticias/registros-ineditos-revelam-area-chave-para-reproducao-de-tubaroes-no-litoral-do-rj/",
+      "location": "Ilha Grande–Sepetiba",
+      "tags": ["sharks", "research", "conservation"]
+    },
+    {
+      "id": "good-ilha-grande-refuge-2026-08",
+      "title": "Baía da Ilha Grande consolidates as a shark research and refuge hotspot",
+      "summary": "PROSHARK monitoring with satellite and acoustic tags, drones, and caiçara knowledge is documenting large blacktip aggregations, tiger sharks including a >4.5 m individual nicknamed Big Mama, and tagged females such as Caiçara and Badjeca. The institute is also working on coexistence protocols and sustainable tourism messaging around Angra dos Reis.",
+      "source": "O Dia",
+      "url": "https://odia.ig.com.br/angra-dos-reis/2026/08/7292707-baia-da-ilha-grande-se-consolida-como-refugio-de-tubaroes.html",
+      "location": "Baía da Ilha Grande, Angra dos Reis",
+      "tags": ["sharks", "research", "tourism"]
+    },
+    {
+      "id": "good-ilhabela-humpbacks-2026-08",
+      "title": "Ilhabela humpback season highlights recovery and responsible tourism",
+      "summary": "Projeto Baleia Jubarte estimates more than 30,000 humpbacks in the Brazilian population after the hunting ban and Lei 7.643/1987. Ilhabela logged a municipal record of 836 sightings in 2025, with the first 2026 Brazilian sighting again there in April. Peak is typically June–July; the town holds a “Cidade Amiga das Baleias” seal and stresses IBAMA approach rules.",
+      "source": "Glamour",
+      "url": "https://glamour.globo.com/um-so-planeta/noticia/2026/08/temporada-de-baleias-por-que-ilhabela-se-tornou-um-dos-melhores-lugares-para-avistar-jubartes-no-brasil.ghtml",
+      "location": "Ilhabela",
+      "tags": ["whales", "tourism", "conservation"]
+    },
+    {
+      "id": "good-ubatuba-azul-2026-06",
+      "title": "Ubatuba creates “Ubatuba Azul – Avistamento Consciente”",
+      "summary": "Municipal Decree 9.112 (25 Jun 2026) regulates whale and dolphin watching with training, an operator registry, a seal, and alignment with Portaria IBAMA 117/1996 — including at least 100 m vessel distance and no swim or dive within 50 m. Partners include Instituto Argonauta, APA Marinha LN, and Instituto Baleia Jubarte.",
+      "source": "Prefeitura de Ubatuba",
+      "url": "https://www.ubatuba.sp.gov.br/noticias/decretoavistamentocetaceos/",
+      "location": "Ubatuba",
+      "tags": ["whales", "regulation", "tourism"]
+    },
+    {
+      "id": "good-mar-sem-lixo-2026-06",
+      "title": "Artisanal fishers remove nearly 24 tonnes of trash in Ubatuba and São Sebastião",
+      "summary": "Programa Mar Sem Lixo paid fishers during the shrimp closed season (Feb–Apr 2026): about 14.8 t in Ubatuba and 9.1 t in São Sebastião, roughly 97% plastic in mangroves. The program has removed more than 164 t on the São Paulo coast since 2023.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/06/05/pescadores-retiram-quase-24-toneladas-de-lixo-do-mar-em-ubatuba-e-sao-sebastiao-no-litoral-norte-de-sp.ghtml",
+      "location": "Ubatuba & São Sebastião",
+      "tags": ["cleanup", "plastic", "fisheries"]
+    },
+    {
+      "id": "good-cmas-cabo-frio-2026",
+      "title": "CMAS Pan-American Spearfishing Championship set for Cabo Frio",
+      "summary": "The men’s and women’s championship runs 3–6 Dec 2026 in Cabo Frio and validates Americas ranking and 2027 World Championship slots. The bulletin cites average visibility around 10–15 m, water about 18–23 °C, and fishing depths to ~30 m on good days across zones including Capões, Dois Irmãos, and Arpoador–Tucuns.",
+      "source": "CMAS / Sportalsub",
+      "url": "https://www.sportalsub.net/blog/spearfishing-cabo-frio-brasil-2026",
+      "location": "Cabo Frio",
+      "tags": ["spearfishing", "visibility", "event"]
+    },
+    {
+      "id": "good-mangona-jump-2026-07",
+      "title": "Rare sand-tiger (mangona) surface jump filmed in Ilhabela",
+      "summary": "A tourist filmed Carcharias taurus briefly leaving the surface during a whale-watch trip. A Unifesp zoologist noted the behavior is unusual but consistent with air-gulping for buoyancy; the species is common locally, with no accident reports cited, and presence framed as a healthy-sea signal.",
+      "source": "Folha de S.Paulo",
+      "url": "https://www1.folha.uol.com.br/ambiente/2026/07/turista-faz-registro-raro-de-salto-de-tubarao-em-ilhabela-sp.shtml",
+      "location": "Ilhabela",
+      "tags": ["sharks", "wildlife"]
+    }
+  ],
+  "bad": [
+    {
+      "id": "bad-cetesb-2026-09-17",
+      "title": "CETESB: 50 Litoral Norte beaches unfit for bathing after rains",
+      "summary": "The 17 Sep bulletin lists 50 improper points across Caraguatatuba, Ilhabela, São Sebastião, and Ubatuba (116 statewide), including many Ilhabela and Ubatuba sites. Enterococci stayed elevated over five consecutive weeks; the next update is expected around 24 Sep. Treat mainland beach entries and shore diving with caution until runoff clears; offshore island sites are often less tied to fecal indicators — confirm day-of with operators.",
+      "source": "Jornal do Litoral / G1",
+      "url": "https://jornaldolitoral.com.br/regiao/2026/09/17/cetesb-divulga-lista-de-50-praias-improprias-para-banho-no-litoral-norte.html",
+      "location": "Litoral Norte SP",
+      "tags": ["water-quality", "bathing", "safety"]
+    },
+    {
+      "id": "bad-oil-ipanema-arraial-2026-07",
+      "title": "Oil residues found on Ipanema and at Arraial do Cabo RESEX",
+      "summary": "Ibama Ceneac collected samples at Ipanema for UFRJ Ladetec analysis; ICMBio reported similar material at Praia Grande (Arraial RESEX). No bathing ban was in place at reporting; avoid touching tar pellets. The Navy Capitanía found no open-water slick at Ipanema. Public origin results were not yet clear through mid-September searches.",
+      "source": "O Globo",
+      "url": "https://oglobo.globo.com/rio/noticia/2026/07/11/ibama-investiga-manchas-de-oleo-encontradas-em-ipanema-material-sera-analisado-por-laboratorio-da-ufrj.ghtml",
+      "location": "Ipanema & Arraial do Cabo",
+      "tags": ["oil", "pollution"]
+    },
+    {
+      "id": "bad-saquarema-capsize-2026-09",
+      "title": "Fatal fishing-boat capsize in Saquarema surf",
+      "summary": "Carlos Magno Espíndola Borges, 56, died after a boat overturned in Itaúna surf after drifting overnight from Canal de Barra Franca; his companion survived. The body was recovered about 10 hours later at Vilatur on 16 Sep. Not a dive incident, but a reminder of boat and sea-user risk on the eastern RJ flank of this brief corridor.",
+      "source": "O Dia",
+      "url": "https://odia.ig.com.br/saquarema/2026/09/7302729-pescador-e-encontrado-morto-apos-o-barco-virar-em-saquarema.html",
+      "location": "Saquarema / Itaúna",
+      "tags": ["safety", "boats"]
+    }
+  ]
+}
