@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918e";
+  const CACHE_BUST = "20260918f";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -179,9 +179,16 @@
 
   function renderSwimMap(beaches) {
     const mapEl = document.getElementById("swim-map");
-    if (!mapEl || typeof L === "undefined") return;
+    if (!mapEl) return;
+    if (typeof L === "undefined") {
+      console.error("Leaflet (L) is not loaded");
+      mapEl.classList.add("is-empty");
+      mapEl.textContent = "Map library failed to load.";
+      return;
+    }
 
     destroySwimMap();
+    mapEl.textContent = "";
 
     const withCoords = (Array.isArray(beaches) ? beaches : []).filter(
       (b) => Number.isFinite(b.lat) && Number.isFinite(b.lon)
@@ -279,7 +286,8 @@
       els.swimTable.hidden = true;
       els.swimTbody.innerHTML = "";
       els.emptySwim.hidden = false;
-      renderSwimMap([]);
+      pendingSwimBeaches = [];
+      destroySwimMap();
       return;
     }
 
@@ -298,11 +306,9 @@
       })
       .join("");
 
-    // Defer map until Swim tab is visible (Leaflet needs a real size)
+    // Map is built when the Swim tab becomes visible (see activateTab)
     pendingSwimBeaches = beaches;
-    if (document.getElementById("panel-swim")?.classList.contains("is-active")) {
-      renderSwimMap(beaches);
-    }
+    destroySwimMap();
   }
 
   function renderGroups(data) {
@@ -380,20 +386,24 @@
 
     if (name === "swim") {
       const build = () => {
-        if (!swimMap && pendingSwimBeaches) {
-          renderSwimMap(pendingSwimBeaches);
-        } else if (swimMap) {
-          swimMap.invalidateSize();
-          if (swimMapLayer) {
-            const b = swimMapLayer.getBounds();
-            if (b.isValid()) swimMap.fitBounds(b.pad(0.12));
+        try {
+          if (pendingSwimBeaches && pendingSwimBeaches.length && !swimMap) {
+            renderSwimMap(pendingSwimBeaches);
+          } else if (swimMap) {
+            swimMap.invalidateSize();
+            if (swimMapLayer) {
+              const b = swimMapLayer.getBounds();
+              if (b.isValid()) swimMap.fitBounds(b.pad(0.12));
+            }
           }
+        } catch (err) {
+          console.error("swim map build failed", err);
         }
       };
       requestAnimationFrame(() => {
         build();
-        setTimeout(build, 50);
-        setTimeout(() => { if (swimMap) swimMap.invalidateSize(); }, 250);
+        setTimeout(build, 100);
+        setTimeout(() => { if (swimMap) swimMap.invalidateSize(); }, 300);
       });
     }
   }
@@ -422,8 +432,12 @@
       const res = await fetch(SWIM_URL, { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
+      if (!data || !Array.isArray(data.beaches)) {
+        throw new Error("swim-safety.json missing beaches array");
+      }
       renderSwim(data);
       lazyLoaders.swim.loaded = true;
+      setStatus("");
     } catch (err) {
       console.error("swim load failed", err);
       lazyLoaders.swim.loaded = false;
@@ -431,6 +445,8 @@
       if (els.swimMeta) els.swimMeta.hidden = true;
       if (els.swimTable) els.swimTable.hidden = true;
       if (els.emptySwim) els.emptySwim.hidden = false;
+      pendingSwimBeaches = null;
+      destroySwimMap();
       setStatus("Could not load swim-safety data.", true);
     }
   }
