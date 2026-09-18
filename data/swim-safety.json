@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-18T08:15:00-03:00",
+  "updatedAt": "2026-09-18T08:55:00-03:00",
   "bulletinDate": "2026-09-17 (SP CETESB) / 2026-09-14 (RJ city & Costa Verde INEA) / 2026-09-08 (Paraty INEA) / 2026-09-14 (Niterói INEA)",
   "source": "CETESB + INEA",
   "sourceUrl": "https://cetesb.sp.gov.br/praias/boletim-semanal/",
   "nextUpdate": "CETESB ~2026-09-24; INEA weekly (Angra/Paraty/Mangaratiba + Rio city)",
-  "note": "Three corridors: CETESB for São Paulo Litoral Norte (Ilhabela–Ubatuba); INEA for Rio city beaches; INEA also for Costa Verde (Angra dos Reis, Paraty, Mangaratiba / Ilha Grande bay). Some popular Ilha Grande spots (e.g. Lopes Mendes) are not always in the weekly INEA point list — only monitored points are shown. Red = Imprópria, orange = Parcial, green = Própria (CONAMA 274/2000 Enterococci). Avoid swimming within 24h of heavy rain and near storm drains. Niterói INEA ocean/bay beaches added (Paraty→Niterói share map).",
+  "note": "Three corridors: CETESB for São Paulo Litoral Norte (Ilhabela–Ubatuba); INEA for Rio city beaches; INEA also for Costa Verde (Angra dos Reis, Paraty, Mangaratiba / Ilha Grande bay). IMPORTANT: weekly INEA Angra bulletins (21 praias / 22 pontos as of 2026-09-14) cover mainland Angra only — Abraão and other Ilha Grande beaches are NOT in the current weekly list (last dedicated Ilha Grande bulletin ~2015–2016). Popular island spots (Lopes Mendes, Dois Rios, Palmas, Preta, Mangues, Bananal, Aventureiro, Lagoa Azul) therefore have no live Própria/Imprópria pin. Leste (Contorno) is the mainland INEA point on Av. Vereador Benedito Adelino, not Praia do Leste on the island. Red = Imprópria, orange = Parcial, green = Própria (CONAMA 274/2000 Enterococci). Avoid swimming within 24h of heavy rain and near storm drains. Niterói INEA ocean/bay beaches added (Paraty→Niterói share map).",
   "beaches": [
     {
       "id": "angra-anil",
@@ -1154,15 +1154,15 @@
     },
     {
       "id": "angra-leste",
-      "name": "Leste",
+      "name": "Leste (Contorno)",
       "municipality": "Angra dos Reis",
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci (INEA)",
-      "detail": "1/1 points",
+      "detail": "1/1 points · Av. Vereador Benedito Adelino n°2386 (Contorno mainland — not Ilha Grande)",
       "agency": "INEA",
-      "lat": -23.1791,
-      "lon": -44.27291,
+      "lat": -23.02502,
+      "lon": -44.3496,
       "rank": 93
     },
     {
