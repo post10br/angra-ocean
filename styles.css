@@ -290,6 +290,14 @@ body {
   color: var(--ocean);
 }
 
+.badge-date {
+  background: rgba(21, 58, 86, 0.1);
+  color: var(--deep);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
 .card-title {
   margin: 0 0 0.65rem;
   font-family: var(--font);

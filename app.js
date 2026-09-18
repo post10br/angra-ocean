@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918k";
+  const CACHE_BUST = "20260918l";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -85,6 +85,26 @@
     }
   }
 
+
+  const PT_BR_MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+
+  function formatArticleDate(iso) {
+    if (!iso || typeof iso !== "string") return "";
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso.trim());
+    if (!m) return iso;
+    const year = Number(m[1]);
+    const month = Number(m[2]);
+    const day = Number(m[3]);
+    if (!year || month < 1 || month > 12 || day < 1 || day > 31) return iso;
+    return `${day} ${PT_BR_MONTHS[month - 1]} ${year}`;
+  }
+
+  function byDateDesc(a, b) {
+    const da = (a && a.date) || "";
+    const db = (b && b.date) || "";
+    return String(db).localeCompare(String(da));
+  }
+
   function isExample(item) {
     return item.example === true || /^\[Example\]/i.test(item.title || "");
   }
@@ -109,6 +129,10 @@
   function renderCard(item) {
     const example = isExample(item);
     const tags = Array.isArray(item.tags) ? item.tags : [];
+    const dateLabel = formatArticleDate(item.date);
+    const dateBadge = dateLabel
+      ? `<time class="badge badge-date" datetime="${escapeHtml(item.date)}">${escapeHtml(dateLabel)}</time>`
+      : "";
     const location = item.location
       ? `<span class="badge badge-location">${escapeHtml(item.location)}</span>`
       : "";
@@ -123,7 +147,7 @@
 
     return `
       <li class="card${example ? " is-example" : ""}">
-        <div class="card-top">${exampleBadge}${location}</div>
+        <div class="card-top">${dateBadge}${exampleBadge}${location}</div>
         <h2 class="card-title">${escapeHtml(item.title || "Untitled")}</h2>
         <p class="card-summary">${escapeHtml(item.summary || "")}</p>
         <div class="card-footer">
@@ -140,7 +164,7 @@
   }
 
   function renderFeed(items, feedEl, emptyEl, countEl) {
-    const list = Array.isArray(items) ? items : [];
+    const list = Array.isArray(items) ? [...items].sort(byDateDesc) : [];
     countEl.textContent = String(list.length);
 
     if (list.length === 0) {
