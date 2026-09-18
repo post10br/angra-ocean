@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Praia própria para banho?</title>
+  <meta name="description" content="Mapa de balneabilidade Paraty → Niterói: praias próprias, parciais e impróprias (dados oficiais INEA)." />
+  <meta property="og:title" content="Praia própria para banho?" />
+  <meta property="og:description" content="Costa Verde até Niterói — veja no mapa se a praia está própria para banho. Dados oficiais INEA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0b1f33" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=20260918i" />
+  <style>
+    :root {
+      --deep: #0b1f33;
+      --ocean: #153a56;
+      --teal: #2a6f8a;
+      --foam: #c8dde8;
+      --sand: #f4efe6;
+      --cream: #faf7f2;
+      --ink: #1a2a36;
+      --muted: #5a6f7e;
+      --safe: #3d8b6e;
+      --caution: #d4a017;
+      --unsafe: #c45c48;
+      --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --serif: "Source Serif 4", Georgia, serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+    .wave-bar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--deep), var(--teal), var(--foam), var(--teal), var(--deep));
+      flex-shrink: 0;
+    }
+    .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 100dvh;
+    }
+    header.top {
+      flex-shrink: 0;
+      padding: 0.85rem 1rem 0.75rem;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 100% 120% at 50% -40%, rgba(42, 111, 138, 0.22), transparent 60%),
+        linear-gradient(180deg, #e8f0f5 0%, var(--cream) 100%);
+      border-bottom: 1px solid rgba(21, 58, 86, 0.1);
+    }
+    .mark {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      color: var(--ocean);
+      margin-bottom: 0.2rem;
+    }
+    .mark svg { width: 28px; height: 28px; }
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(1.35rem, 4.5vw, 1.75rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--deep);
+      line-height: 1.2;
+    }
+    .sub {
+      margin: 0.35rem 0 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .meta {
+      margin-top: 0.45rem;
+      font-size: 0.72rem;
+      color: var(--teal);
+      font-weight: 500;
+    }
+    #map {
+      flex: 1;
+      width: 100%;
+      min-height: 280px;
+      background: #d7e4eb;
+    }
+    .legend {
+      position: absolute;
+      z-index: 1000;
+      left: 10px;
+      bottom: 28px;
+      background: rgba(250, 247, 242, 0.94);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(21, 58, 86, 0.12);
+      border-radius: 12px;
+      padding: 0.55rem 0.75rem;
+      box-shadow: 0 6px 20px rgba(11, 31, 51, 0.1);
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .legend strong {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .legend span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1.5px solid #fff;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    .dot.safe { background: var(--safe); }
+    .dot.caution { background: var(--caution); }
+    .dot.unsafe { background: var(--unsafe); }
+    footer.foot {
+      flex-shrink: 0;
+      text-align: center;
+      padding: 0.55rem 1rem calc(0.55rem + env(safe-area-inset-bottom));
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: var(--sand);
+      border-top: 1px solid rgba(21, 58, 86, 0.08);
+    }
+    footer.foot a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer.foot a:hover { text-decoration: underline; }
+    .leaflet-popup-content {
+      margin: 0.65rem 0.85rem;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      line-height: 1.45;
+      min-width: 160px;
+    }
+    .leaflet-popup-content strong {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      color: var(--deep);
+    }
+    .popup-status { font-weight: 600; }
+    .popup-tip {
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .err {
+      padding: 2rem 1.25rem;
+      text-align: center;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="wave-bar" aria-hidden="true"></div>
+    <header class="top">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 14c2.5-2 5-3 8-3s5.5 1 8 3 4 3 4 0" />
+          <path d="M2 18c2.5-2 5-3 8-3s5.5 1 8 3" />
+          <path d="M4 10c1.5-3 4-5 8-5s6.5 2 8 5" opacity="0.55" />
+        </svg>
+      </div>
+      <h1>Praia própria para banho?</h1>
+      <p class="sub">Costa Verde até Niterói · dados oficiais · atualizado diariamente</p>
+      <p class="meta" id="meta">Carregando…</p>
+    </header>
+    <div id="map" role="region" aria-label="Mapa de balneabilidade"></div>
+    <footer class="foot">
+      Fonte: INEA ·
+      <a href="./">Angra Ocean — brief completo</a>
+    </footer>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js?v=20260918i"></script>
+  <script>
+  (() => {
+    "use strict";
+    const CACHE_BUST = "20260918i";
+    const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
+    const MUNIS = new Set([
+      "Paraty",
+      "Angra dos Reis",
+      "Mangaratiba",
+      "Rio de Janeiro",
+      "Niterói",
+    ]);
+
+    const COLORS = {
+      safe: "#3d8b6e",
+      caution: "#d4a017",
+      unsafe: "#c45c48",
+    };
+
+    function tipFor(status) {
+      if (status === "safe") return "Própria para banho neste boletim. Evite após chuva forte.";
+      if (status === "caution") return "Parcial: só alguns trechos liberados — confira o ponto mais perto de você.";
+      return "Imprópria neste boletim. Prefira outra praia ou aguarde nova coleta.";
+    }
+
+    function esc(s) {
+      return String(s ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    const mapEl = document.getElementById("map");
+    const metaEl = document.getElementById("meta");
+
+    const map = L.map(mapEl, {
+      scrollWheelZoom: true,
+      attributionControl: true,
+    });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    const legend = L.control({ position: "bottomleft" });
+    legend.onAdd = () => {
+      const div = L.DomUtil.create("div", "legend");
+      div.innerHTML =
+        "<strong>Balneabilidade</strong>" +
+        '<span><i class="dot safe"></i> Própria</span>' +
+        '<span><i class="dot caution"></i> Parcial</span>' +
+        '<span><i class="dot unsafe"></i> Imprópria</span>';
+      return div;
+    };
+    legend.addTo(map);
+
+    fetch(SWIM_URL)
+      .then((r) => {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then((data) => {
+        const beaches = (data.beaches || []).filter(
+          (b) => MUNIS.has(b.municipality) && Number.isFinite(b.lat) && Number.isFinite(b.lon)
+        );
+        const group = L.featureGroup();
+        beaches.forEach((b) => {
+          const color = COLORS[b.status] || COLORS.unsafe;
+          const m = L.circleMarker([b.lat, b.lon], {
+            radius: 8,
+            color: "#fff",
+            weight: 1.5,
+            fillColor: color,
+            fillOpacity: 0.92,
+          });
+          const dateBit = data.bulletinDate
+            ? `<br><small>Boletim: ${esc(data.bulletinDate)}</small>`
+            : "";
+          m.bindPopup(
+            `<strong>${esc(b.name)}</strong><br>` +
+              `${esc(b.municipality)}<br>` +
+              `<span class="popup-status" style="color:${color}">${esc(b.label || b.status)}</span>` +
+              (b.detail ? ` · ${esc(b.detail)}` : "") +
+              dateBit +
+              `<br><small>${esc(b.agency || "INEA")}</small>` +
+              `<div class="popup-tip">${esc(tipFor(b.status))}</div>`
+          );
+          group.addLayer(m);
+        });
+        group.addTo(map);
+        if (group.getLayers().length) {
+          map.fitBounds(group.getBounds().pad(0.08));
+        } else {
+          map.setView([-22.95, -43.6], 9);
+        }
+        const nSafe = beaches.filter((b) => b.status === "safe").length;
+        const nCaution = beaches.filter((b) => b.status === "caution").length;
+        const nUnsafe = beaches.filter((b) => b.status === "unsafe").length;
+        metaEl.textContent =
+          `${beaches.length} praias · ${nSafe} próprias · ${nCaution} parciais · ${nUnsafe} impróprias`;
+        requestAnimationFrame(() => map.invalidateSize());
+        setTimeout(() => map.invalidateSize(), 200);
+      })
+      .catch((err) => {
+        console.error(err);
+        metaEl.textContent = "Não foi possível carregar os dados.";
+        mapEl.innerHTML = '<p class="err">Erro ao carregar o mapa de balneabilidade.</p>';
+      });
+  })();
+  </script>
+</body>
+</html>
