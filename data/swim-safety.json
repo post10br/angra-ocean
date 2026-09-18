@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-18T07:12:56-03:00",
-  "bulletinDate": "2026-09-18",
-  "source": "CETESB",
-  "sourceUrl": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Atual",
-  "nextUpdate": "2026-09-24",
-  "note": "Classificação semanal CETESB (boletim 17/09/2026) por enterococos conforme CONAMA 274/2000: imprópria se ≥100 UFC/100 mL em 2+ de 5 amostras ou ≥400 UFC/100 mL em uma. Página boletim-semanal bloqueada por WAF/JS; dados oficiais via camada ArcGIS Praias (data_atual 17/09/2026 12:10 BRT), corroborados por Jornal do Litoral e iG Turismo. INEA (RJ/Angra): portal existe, mas sem boletim atual da semana de 17–18/09/2026 encontrado — praias RJ omitidas.",
+  "updatedAt": "2026-09-18T07:35:00-03:00",
+  "bulletinDate": "2026-09-17 (SP) / 2026-09-14 (RJ)",
+  "source": "CETESB + INEA",
+  "sourceUrl": "https://cetesb.sp.gov.br/praias/boletim-semanal/",
+  "nextUpdate": "CETESB ~2026-09-24; INEA weekly",
+  "note": "Two agencies: CETESB monitors São Paulo’s Litoral Norte (Ilhabela–Ubatuba corridor); INEA monitors Rio de Janeiro state beaches (Ipanema, Copacabana, etc.). Both use Enterococci under CONAMA 274/2000. Red = Imprópria, orange = Parcial/Satisfatória, green = Própria. RJ rows reflect the INEA collection reported around 14 Sep 2026; SP rows from CETESB 17 Sep 2026. Avoid swimming within 24h of heavy rain and near storm drains.",
   "beaches": [
     {
       "id": "crpb169",
@@ -13,7 +13,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 1
+      "rank": 1,
+      "agency": "CETESB"
     },
     {
       "id": "crce167",
@@ -22,7 +23,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 2
+      "rank": 2,
+      "agency": "CETESB"
     },
     {
       "id": "crco153",
@@ -31,7 +33,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 3
+      "rank": 3,
+      "agency": "CETESB"
     },
     {
       "id": "crin168",
@@ -40,7 +43,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 4
+      "rank": 4,
+      "agency": "CETESB"
     },
     {
       "id": "crms163",
@@ -49,7 +53,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 5
+      "rank": 5,
+      "agency": "CETESB"
     },
     {
       "id": "crma154",
@@ -58,7 +63,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 6
+      "rank": 6,
+      "agency": "CETESB"
     },
     {
       "id": "crpm172",
@@ -67,7 +73,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 7
+      "rank": 7,
+      "agency": "CETESB"
     },
     {
       "id": "crpn175",
@@ -76,7 +83,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 8
+      "rank": 8,
+      "agency": "CETESB"
     },
     {
       "id": "crpr165",
@@ -85,7 +93,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 9
+      "rank": 9,
+      "agency": "CETESB"
     },
     {
       "id": "crtb148",
@@ -94,7 +103,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 10
+      "rank": 10,
+      "agency": "CETESB"
     },
     {
       "id": "ibar184",
@@ -103,7 +113,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 11
+      "rank": 11,
+      "agency": "CETESB"
     },
     {
       "id": "ibbn190",
@@ -112,7 +123,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 12
+      "rank": 12,
+      "agency": "CETESB"
     },
     {
       "id": "ibbs191",
@@ -121,7 +133,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 13
+      "rank": 13,
+      "agency": "CETESB"
     },
     {
       "id": "ibcr204",
@@ -130,7 +143,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 14
+      "rank": 14,
+      "agency": "CETESB"
     },
     {
       "id": "ibea192",
@@ -139,7 +153,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 15
+      "rank": 15,
+      "agency": "CETESB"
     },
     {
       "id": "ibfe202",
@@ -148,7 +163,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 16
+      "rank": 16,
+      "agency": "CETESB"
     },
     {
       "id": "ibgd203",
@@ -157,7 +173,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 17
+      "rank": 17,
+      "agency": "CETESB"
     },
     {
       "id": "ibit193",
@@ -166,7 +183,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 18
+      "rank": 18,
+      "agency": "CETESB"
     },
     {
       "id": "ibiq192",
@@ -175,7 +193,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 19
+      "rank": 19,
+      "agency": "CETESB"
     },
     {
       "id": "ibju202",
@@ -184,7 +203,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 20
+      "rank": 20,
+      "agency": "CETESB"
     },
     {
       "id": "ibpe194",
@@ -193,7 +213,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 21
+      "rank": 21,
+      "agency": "CETESB"
     },
     {
       "id": "ibpo197",
@@ -202,7 +223,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 22
+      "rank": 22,
+      "agency": "CETESB"
     },
     {
       "id": "ibsc191",
@@ -211,7 +233,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 23
+      "rank": 23,
+      "agency": "CETESB"
     },
     {
       "id": "ibsn186",
@@ -220,7 +243,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 24
+      "rank": 24,
+      "agency": "CETESB"
     },
     {
       "id": "ibsi188",
@@ -229,7 +253,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 25
+      "rank": 25,
+      "agency": "CETESB"
     },
     {
       "id": "ibve205",
@@ -238,7 +263,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 26
+      "rank": 26,
+      "agency": "CETESB"
     },
     {
       "id": "ibvi190",
@@ -247,7 +273,151 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 27
+      "rank": 27,
+      "agency": "CETESB"
+    },
+    {
+      "id": "rj-arpoador",
+      "name": "Arpoador",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 28
+    },
+    {
+      "id": "rj-barra-tijuca-ii",
+      "name": "Barra da Tijuca II",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 29
+    },
+    {
+      "id": "rj-botafogo",
+      "name": "Botafogo",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/2 points",
+      "agency": "INEA",
+      "rank": 30
+    },
+    {
+      "id": "rj-diabo",
+      "name": "Diabo",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 31
+    },
+    {
+      "id": "rj-flamengo",
+      "name": "Flamengo",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/2 points",
+      "agency": "INEA",
+      "rank": 32
+    },
+    {
+      "id": "rj-gloria",
+      "name": "Glória",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 33
+    },
+    {
+      "id": "rj-ipanema",
+      "name": "Ipanema",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/3 points",
+      "agency": "INEA",
+      "rank": 34
+    },
+    {
+      "id": "rj-leblon",
+      "name": "Leblon",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/3 points",
+      "agency": "INEA",
+      "rank": 35
+    },
+    {
+      "id": "rj-pepino",
+      "name": "Pepino",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 36
+    },
+    {
+      "id": "rj-sao-conrado",
+      "name": "São Conrado",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/2 points",
+      "agency": "INEA",
+      "rank": 37
+    },
+    {
+      "id": "rj-urca",
+      "name": "Urca",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 38
+    },
+    {
+      "id": "rj-vermelha",
+      "name": "Vermelha",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 39
+    },
+    {
+      "id": "rj-vidigal",
+      "name": "Vidigal",
+      "municipality": "Rio de Janeiro",
+      "status": "unsafe",
+      "label": "Imprópria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "0/1 points",
+      "agency": "INEA",
+      "rank": 40
     },
     {
       "id": "ssar189",
@@ -256,7 +426,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 28
+      "rank": 41,
+      "agency": "CETESB"
     },
     {
       "id": "ssba202",
@@ -265,7 +436,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 29
+      "rank": 42,
+      "agency": "CETESB"
     },
     {
       "id": "ssbr264",
@@ -274,7 +446,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 30
+      "rank": 43,
+      "agency": "CETESB"
     },
     {
       "id": "ssbr262",
@@ -283,7 +456,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 31
+      "rank": 44,
+      "agency": "CETESB"
     },
     {
       "id": "ssca239",
@@ -292,7 +466,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 32
+      "rank": 45,
+      "agency": "CETESB"
     },
     {
       "id": "ssde191",
@@ -301,7 +476,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 33
+      "rank": 46,
+      "agency": "CETESB"
     },
     {
       "id": "sseg257",
@@ -310,7 +486,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 34
+      "rank": 47,
+      "agency": "CETESB"
     },
     {
       "id": "sspc190",
@@ -319,7 +496,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 35
+      "rank": 48,
+      "agency": "CETESB"
     },
     {
       "id": "sspg192",
@@ -328,7 +506,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 36
+      "rank": 49,
+      "agency": "CETESB"
     },
     {
       "id": "sspn179",
@@ -337,7 +516,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 37
+      "rank": 50,
+      "agency": "CETESB"
     },
     {
       "id": "sspn197",
@@ -346,7 +526,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 38
+      "rank": 51,
+      "agency": "CETESB"
     },
     {
       "id": "sssf187",
@@ -355,7 +536,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 39
+      "rank": 52,
+      "agency": "CETESB"
     },
     {
       "id": "ubdu109",
@@ -364,7 +546,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 40
+      "rank": 53,
+      "agency": "CETESB"
     },
     {
       "id": "uben087",
@@ -373,7 +556,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 41
+      "rank": 54,
+      "agency": "CETESB"
     },
     {
       "id": "ubip060",
@@ -382,7 +566,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 42
+      "rank": 55,
+      "agency": "CETESB"
     },
     {
       "id": "ubit062",
@@ -391,7 +576,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 43
+      "rank": 56,
+      "agency": "CETESB"
     },
     {
       "id": "ubit063",
@@ -400,7 +586,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 44
+      "rank": 57,
+      "agency": "CETESB"
     },
     {
       "id": "ublz104",
@@ -409,7 +596,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 45
+      "rank": 58,
+      "agency": "CETESB"
     },
     {
       "id": "ubma127",
@@ -418,7 +606,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 46
+      "rank": 59,
+      "agency": "CETESB"
     },
     {
       "id": "ubpm090",
@@ -427,7 +616,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 47
+      "rank": 60,
+      "agency": "CETESB"
     },
     {
       "id": "ubri048",
@@ -436,7 +626,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 48
+      "rank": 61,
+      "agency": "CETESB"
     },
     {
       "id": "ubsr089",
@@ -445,7 +636,8 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 49
+      "rank": 62,
+      "agency": "CETESB"
     },
     {
       "id": "ubsp126",
@@ -454,7 +646,30 @@
       "status": "unsafe",
       "label": "Imprópria",
       "indicator": "Enterococci",
-      "rank": 50
+      "rank": 63,
+      "agency": "CETESB"
+    },
+    {
+      "id": "rj-barra-tijuca",
+      "name": "Barra da Tijuca",
+      "municipality": "Rio de Janeiro",
+      "status": "caution",
+      "label": "Parcial",
+      "indicator": "Enterococci (INEA)",
+      "detail": "2/3 points própria",
+      "agency": "INEA",
+      "rank": 64
+    },
+    {
+      "id": "rj-bica",
+      "name": "Bica",
+      "municipality": "Rio de Janeiro",
+      "status": "caution",
+      "label": "Parcial",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/2 points própria",
+      "agency": "INEA",
+      "rank": 65
     },
     {
       "id": "crca158",
@@ -463,7 +678,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 51
+      "rank": 66,
+      "agency": "CETESB"
     },
     {
       "id": "crla160",
@@ -472,7 +688,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 52
+      "rank": 67,
+      "agency": "CETESB"
     },
     {
       "id": "crmo151",
@@ -481,7 +698,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 53
+      "rank": 68,
+      "agency": "CETESB"
     },
     {
       "id": "crtb149",
@@ -490,7 +708,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 54
+      "rank": 69,
+      "agency": "CETESB"
     },
     {
       "id": "ibic195",
@@ -499,7 +718,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 55
+      "rank": 70,
+      "agency": "CETESB"
     },
     {
       "id": "ibpi185",
@@ -508,7 +728,129 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 56
+      "rank": 71,
+      "agency": "CETESB"
+    },
+    {
+      "id": "rj-barra-guaratiba",
+      "name": "Barra de Guaratiba",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 72
+    },
+    {
+      "id": "rj-copacabana",
+      "name": "Copacabana",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "4/4 points",
+      "agency": "INEA",
+      "rank": 73
+    },
+    {
+      "id": "rj-coqueiros",
+      "name": "Coqueiros",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 74
+    },
+    {
+      "id": "rj-grumari",
+      "name": "Grumari",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "2/2 points",
+      "agency": "INEA",
+      "rank": 75
+    },
+    {
+      "id": "rj-joatinga",
+      "name": "Joatinga",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 76
+    },
+    {
+      "id": "rj-leme",
+      "name": "Leme",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 77
+    },
+    {
+      "id": "rj-pontal-sernambetiba",
+      "name": "Pontal de Sernambetiba",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "2/2 points",
+      "agency": "INEA",
+      "rank": 78
+    },
+    {
+      "id": "rj-prainha-rj",
+      "name": "Prainha",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 79
+    },
+    {
+      "id": "rj-prainha-paqueta",
+      "name": "Prainha (Paquetá)",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "1/1 points",
+      "agency": "INEA",
+      "rank": 80
+    },
+    {
+      "id": "rj-recreio",
+      "name": "Recreio",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "2/2 points",
+      "agency": "INEA",
+      "rank": 81
+    },
+    {
+      "id": "rj-recreio-reserva",
+      "name": "Recreio / Reserva",
+      "municipality": "Rio de Janeiro",
+      "status": "safe",
+      "label": "Própria",
+      "indicator": "Enterococci (INEA)",
+      "detail": "2/2 points",
+      "agency": "INEA",
+      "rank": 82
     },
     {
       "id": "ssbl243",
@@ -517,7 +859,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 57
+      "rank": 83,
+      "agency": "CETESB"
     },
     {
       "id": "ssbo235",
@@ -526,7 +869,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 58
+      "rank": 84,
+      "agency": "CETESB"
     },
     {
       "id": "sscb238",
@@ -535,7 +879,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 59
+      "rank": 85,
+      "agency": "CETESB"
     },
     {
       "id": "ssci183",
@@ -544,7 +889,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 60
+      "rank": 86,
+      "agency": "CETESB"
     },
     {
       "id": "ssgd199",
@@ -553,7 +899,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 61
+      "rank": 87,
+      "agency": "CETESB"
     },
     {
       "id": "ssgu205",
@@ -562,7 +909,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 62
+      "rank": 88,
+      "agency": "CETESB"
     },
     {
       "id": "ssju251",
@@ -571,7 +919,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 63
+      "rank": 89,
+      "agency": "CETESB"
     },
     {
       "id": "ssju250",
@@ -580,7 +929,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 64
+      "rank": 90,
+      "agency": "CETESB"
     },
     {
       "id": "ssjn258",
@@ -589,7 +939,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 65
+      "rank": 91,
+      "agency": "CETESB"
     },
     {
       "id": "ssma226",
@@ -598,7 +949,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 66
+      "rank": 92,
+      "agency": "CETESB"
     },
     {
       "id": "ssma228",
@@ -607,7 +959,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 67
+      "rank": 93,
+      "agency": "CETESB"
     },
     {
       "id": "sspa223",
@@ -616,7 +969,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 68
+      "rank": 94,
+      "agency": "CETESB"
     },
     {
       "id": "sspr248",
@@ -625,7 +979,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 69
+      "rank": 95,
+      "agency": "CETESB"
     },
     {
       "id": "ssst221",
@@ -634,7 +989,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 70
+      "rank": 96,
+      "agency": "CETESB"
     },
     {
       "id": "sssa247",
@@ -643,7 +999,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 71
+      "rank": 97,
+      "agency": "CETESB"
     },
     {
       "id": "sstg214",
@@ -652,7 +1009,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 72
+      "rank": 98,
+      "agency": "CETESB"
     },
     {
       "id": "sstp219",
@@ -661,7 +1019,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 73
+      "rank": 99,
+      "agency": "CETESB"
     },
     {
       "id": "ssun255",
@@ -670,7 +1029,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 74
+      "rank": 100,
+      "agency": "CETESB"
     },
     {
       "id": "ubdd105",
@@ -679,7 +1039,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 75
+      "rank": 101,
+      "agency": "CETESB"
     },
     {
       "id": "ubfo116",
@@ -688,7 +1049,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 76
+      "rank": 102,
+      "agency": "CETESB"
     },
     {
       "id": "ubfx042",
@@ -697,7 +1059,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 77
+      "rank": 103,
+      "agency": "CETESB"
     },
     {
       "id": "ubgd076",
@@ -706,7 +1069,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 78
+      "rank": 104,
+      "agency": "CETESB"
     },
     {
       "id": "ubim047",
@@ -715,7 +1079,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 79
+      "rank": 105,
+      "agency": "CETESB"
     },
     {
       "id": "ublp039",
@@ -724,7 +1089,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 80
+      "rank": 106,
+      "agency": "CETESB"
     },
     {
       "id": "ublg123",
@@ -733,7 +1099,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 81
+      "rank": 107,
+      "agency": "CETESB"
     },
     {
       "id": "ublg125",
@@ -742,7 +1109,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 82
+      "rank": 108,
+      "agency": "CETESB"
     },
     {
       "id": "iapa093",
@@ -751,7 +1119,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 83
+      "rank": 109,
+      "agency": "CETESB"
     },
     {
       "id": "ubpa057",
@@ -760,7 +1129,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 84
+      "rank": 110,
+      "agency": "CETESB"
     },
     {
       "id": "ubpc017",
@@ -769,7 +1139,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 85
+      "rank": 111,
+      "agency": "CETESB"
     },
     {
       "id": "iafo097",
@@ -778,7 +1149,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 86
+      "rank": 112,
+      "agency": "CETESB"
     },
     {
       "id": "iaen096",
@@ -787,7 +1159,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 87
+      "rank": 113,
+      "agency": "CETESB"
     },
     {
       "id": "iale099",
@@ -796,7 +1169,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 88
+      "rank": 114,
+      "agency": "CETESB"
     },
     {
       "id": "iapr095",
@@ -805,7 +1179,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 89
+      "rank": 115,
+      "agency": "CETESB"
     },
     {
       "id": "ubpr040",
@@ -814,7 +1189,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 90
+      "rank": 116,
+      "agency": "CETESB"
     },
     {
       "id": "ubpu128",
@@ -823,7 +1199,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 91
+      "rank": 117,
+      "agency": "CETESB"
     },
     {
       "id": "iasa094",
@@ -832,7 +1209,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 92
+      "rank": 118,
+      "agency": "CETESB"
     },
     {
       "id": "iasu098",
@@ -841,7 +1219,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 93
+      "rank": 119,
+      "agency": "CETESB"
     },
     {
       "id": "ubsn102",
@@ -850,7 +1229,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 94
+      "rank": 120,
+      "agency": "CETESB"
     },
     {
       "id": "ubtn074",
@@ -859,7 +1239,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 95
+      "rank": 121,
+      "agency": "CETESB"
     },
     {
       "id": "ubto078",
@@ -868,7 +1249,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 96
+      "rank": 122,
+      "agency": "CETESB"
     },
     {
       "id": "ubve072",
@@ -877,7 +1259,8 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 97
+      "rank": 123,
+      "agency": "CETESB"
     },
     {
       "id": "ubvn053",
@@ -886,8 +1269,11 @@
       "status": "safe",
       "label": "Própria",
       "indicator": "Enterococci",
-      "rank": 98
+      "rank": 124,
+      "agency": "CETESB"
     }
   ],
-  "mapUrl": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Atual"
+  "mapUrl": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Atual",
+  "ineaUrl": "https://www.inea.rj.gov.br/ar-agua-e-solo/balneabilidade-das-praias/",
+  "secondarySourceUrl": "https://toemcasa.com.br/balneabilidade/rio-de-janeiro-rj/"
 }

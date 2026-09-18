@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918b";
+  const CACHE_BUST = "20260918c";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -35,6 +35,7 @@
     swimUnsafeCount: document.getElementById("swim-unsafe-count"),
     swimBulletinLink: document.getElementById("swim-bulletin-link"),
     swimMapLink: document.getElementById("swim-map-link"),
+    swimIneaLink: document.getElementById("swim-inea-link"),
     swimTable: document.getElementById("swim-table"),
     swimTbody: document.getElementById("swim-tbody"),
     groupsMeta: document.getElementById("groups-meta"),
@@ -185,6 +186,11 @@
     if (data.mapUrl) {
       els.swimMapLink.href = data.mapUrl;
       els.swimMapLink.hidden = false;
+    }
+    if (els.swimIneaLink) {
+      const inea = data.ineaUrl || "https://www.inea.rj.gov.br/ar-agua-e-solo/balneabilidade-das-praias/";
+      els.swimIneaLink.href = inea;
+      els.swimIneaLink.hidden = false;
     }
 
     els.swimMeta.hidden = false;
