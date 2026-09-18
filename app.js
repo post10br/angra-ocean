@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CACHE_BUST = "20260918f";
+  const CACHE_BUST = "20260918g";
   const DATA_URL = `data/news.json?v=${CACHE_BUST}`;
   const SWIM_URL = `data/swim-safety.json?v=${CACHE_BUST}`;
   const GROUPS_URL = `data/groups.json?v=${CACHE_BUST}`;
@@ -162,6 +162,7 @@
 
   let swimMap = null;
   let swimMapLayer = null;
+  let pendingSwimBeaches = null;
 
   function markerColor(status) {
     if (status === "safe") return "#3d8b6e";
