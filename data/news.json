@@ -1,8 +1,36 @@
 {
-  "date": "2026-09-18",
-  "updatedAt": "2026-09-18T11:20:00-03:00",
-  "region": "SE Brazil coast (RJ–SP focus · Guanabara → Ilhabela + nearby)",
+  "date": "2026-09-19",
+  "updatedAt": "2026-09-19T06:15:00-03:00",
+  "region": "SE Brazil coast (RJ–SP–ES–PR–SC · Guanabara → Ilhabela + Costa Verde / Lagos)",
   "good": [
+    {
+      "id": "good-ubatuba-itagua-cleanup-2026-09-19",
+      "title": "World Cleanup Day: Argonauta, Tamar and Aquário clean Praia do Itaguá in Ubatuba",
+      "summary": "On 19 Sep (from 8h30 at Praça da Baleia), Aquário de Ubatuba, Instituto Argonauta and Fundação Projeto Tamar lead a shore cleanup on Praia do Itaguá with PESM Picinguaba, APA Marinha LN, Mar Sem Lixo and partners — sorting and logging litter as citizen science. Marks ~30 years of the local anti-marine-litter campaign started in the 1990s.",
+      "source": "Nova Imprensa",
+      "url": "https://novaimprensa.com/2026/09/aquario-de-ubatuba-instituto-argonauta-e-tamar-promovem-mutirao-de-limpeza.html",
+      "date": "2026-09-19",
+      "location": "Praia do Itaguá, Ubatuba",
+      "tags": [
+        "cleanup",
+        "plastic",
+        "citizen-science"
+      ]
+    },
+    {
+      "id": "good-santos-supereco-cleanup-2026-09-19",
+      "title": "Cleanup Day 2026: Instituto Supereco mobilizes volunteers on Santos beach",
+      "summary": "Tecendo as Águas (Supereco / Petrobras Socioambiental) joins the 19 Sep global Cleanup Day from 9h on the beach in front of Etec Dona Escolástica Rosa (Av. Bartolomeu de Gusmão). 2025 Santos actions removed 53+ kg on Gonzaga and 1.46 t from Jardim São Manoel mangrove — data-driven litter removal for the Santos estuary corridor.",
+      "source": "ImprensaBR",
+      "url": "https://imprensabr.com/instituto-supereco-mobiliza-voluntarios-pelo-oceano-no-cleanup-day-2026-em-santos/",
+      "date": "2026-09-19",
+      "location": "Santos (Baixada Santista)",
+      "tags": [
+        "cleanup",
+        "plastic",
+        "mangroves"
+      ]
+    },
     {
       "id": "good-flamengo-cleanup-2026-09",
       "title": "World Cleanup Day mutirão set for Flamengo beach and Marina da Glória",
@@ -18,6 +46,20 @@
       ]
     },
     {
+      "id": "good-rio-ocean-week-saneamento-2026-09",
+      "title": "Rio Ocean Week: sanitation framed as the path to cleaner Guanabara beaches",
+      "summary": "At Museu do Amanhã (17 Sep), Águas do Rio highlighted R$6.4 bn invested since concession start, dry-weather collectors ringing Guanabara Bay, and ~134 million liters/day of raw sewage kept out of the bay — arguing urban river cleanup returns Flamengo/Glória-type beaches to the city and supports the blue economy.",
+      "source": "TV Prefeito",
+      "url": "https://tvprefeito.com/saneamento-como-motor-da-despoluicao-de-rios-e-da-protecao-dos-oceanos-pauta-debates-na-rio-ocean-week/",
+      "date": "2026-09-18",
+      "location": "Baía de Guanabara / Rio",
+      "tags": [
+        "sanitation",
+        "Guanabara",
+        "policy"
+      ]
+    },
+    {
       "id": "good-world-cleanup-biomar-2026-09",
       "title": "World Cleanup Day: Biomar mutirões include São Sebastião beach cleanup",
       "summary": "Rede Biomar (Coral Vivo, Baleia Jubarte and partners) is running September cleanups with citizen science — sorting, weighing, and logging trash. São Sebastião’s Praia da Barra do Sahy action was set for 15 Sep; the network has removed about 17 t since 2018. Plastic dominated past editions. Useful context for shore entries and shoreline dive staging.",
@@ -29,6 +71,20 @@
         "cleanup",
         "plastic",
         "citizen-science"
+      ]
+    },
+    {
+      "id": "good-sao-sebastiao-cleanup-2026-09-16",
+      "title": "São Sebastião Cleanup Day warm-up removes 8.78 kg near Convento de São Francisco",
+      "summary": "On 16 Sep, Instituto Supereco with SEMAM and Programa Mar Sem Lixo logged 600 cigarette butts, plastics, styrofoam and glass near the historic convent — anticipating the 19 Sep global day. Projeto Baleia Jubarte staff joined; kids from Projeto Cidadão Criança took part. Small haul, strong local education signal on the LN SP dive corridor.",
+      "source": "AN9",
+      "url": "https://an9.com.br/cleanup-day-2026-mobiliza-criancas-moradores-e-voluntarios-pelo-cuidado-com-praias-e-oceanos-em-sao-sebastiao/",
+      "date": "2026-09-16",
+      "location": "São Sebastião (Centro)",
+      "tags": [
+        "cleanup",
+        "plastic",
+        "education"
       ]
     },
     {
@@ -155,6 +211,20 @@
         "spearfishing",
         "visibility",
         "event"
+      ]
+    },
+    {
+      "id": "good-mangue-alegria-20k-2026-07",
+      "title": "Mangue Alegria hits 20,000 native seedlings on Guanabara’s Caju shore",
+      "summary": "Águas do Rio with biologist Mário Moscatelli report ~1 ha restored at ETE Alegria (Zona Portuária), 20k mangrove/native seedlings planted and 450 t of trash removed from the forest fringe. Concessionaire says sanitation works already keep ~134 million L/day of raw sewage out of the bay; dry-weather collector belt continues.",
+      "source": "Águas do Rio",
+      "url": "https://www.aguasdorio.com.br/dia-de-protecao-aos-manguezais-plantio-de-20-mil-mudas-transforma-cenario-as-margens-da-baia-de-guanabara/",
+      "date": "2026-07-27",
+      "location": "Caju / ETE Alegria, Baía de Guanabara",
+      "tags": [
+        "mangroves",
+        "restoration",
+        "Guanabara"
       ]
     },
     {
@@ -341,6 +411,34 @@
       ]
     },
     {
+      "id": "bad-niteroi-inea-2026-09-17",
+      "title": "INEA Niterói: only 24% of monitored points fit for bathing after rains",
+      "summary": "Bulletin of 17 Sep shows 7 of 29 points própria (24%). Ocean and bay beaches including Camboinhas, Itacoatiara, Itaipu, Icaraí, Charitas and São Francisco are imprópria; Piratininga, Eva, Gragoatá and Sossego remain própria. Heavy recent rain typically drives fecal indicator spikes — check before shore dives or family swims.",
+      "source": "INEA / Tô em Casa",
+      "url": "https://toemcasa.com.br/balneabilidade/niteroi-rj/",
+      "date": "2026-09-17",
+      "location": "Niterói",
+      "tags": [
+        "balneabilidade",
+        "pollution",
+        "sewage"
+      ]
+    },
+    {
+      "id": "bad-rio-inea-2026-09-17",
+      "title": "INEA Rio city: only 39% of points própria — Ipanema and Flamengo still unfit",
+      "summary": "Analysis of 17 Sep: 24 of 61 points própria. Copacabana (4/4), Grumari, Recreio, Leme and Joatinga stay própria, but Ipanema (0/3), Flamengo, Botafogo, São Conrado and many bay/island points are imprópria; Barra da Tijuca and Leblon are parcial. Weekend swim/dive staging needs point-level checks.",
+      "source": "INEA / Tô em Casa",
+      "url": "https://toemcasa.com.br/balneabilidade/rio-de-janeiro-rj/",
+      "date": "2026-09-17",
+      "location": "Rio de Janeiro",
+      "tags": [
+        "balneabilidade",
+        "pollution",
+        "sewage"
+      ]
+    },
+    {
       "id": "bad-saquarema-capsize-2026-09",
       "title": "Fatal fishing-boat capsize in Saquarema surf",
       "summary": "Carlos Magno Espíndola Borges, 56, died after a boat overturned in Itaúna surf after drifting overnight from Canal de Barra Franca; his companion survived. The body was recovered about 10 hours later at Vilatur on 16 Sep. Not a dive incident, but a reminder of boat and sea-user risk on the eastern RJ flank of this brief corridor.",
@@ -392,6 +490,20 @@
         "whales",
         "strandings",
         "safety"
+      ]
+    },
+    {
+      "id": "bad-pinguins-golfinho-baixada-2026-08",
+      "title": "Three Magellanic penguins and a dolphin found dead on Baixada Santista beaches",
+      "summary": "Instituto Biopesca (PMP-BS) recovered three Spheniscus magellanicus on Praia do Maracanã (Praia Grande) and a dolphin in Mongaguá on 24 Aug. Advanced decomposition blocked cause-of-death ID; winter migration and weather may play a role. Public advised to keep distance and call responders — not push animals back to sea.",
+      "source": "G1",
+      "url": "https://g1.globo.com/sp/santos-regiao/noticia/2026/08/25/pinguins-e-golfinho-sao-encontrados-mortos-em-praias-do-litoral-de-sp.ghtml",
+      "date": "2026-08-25",
+      "location": "Praia Grande / Mongaguá",
+      "tags": [
+        "strandings",
+        "wildlife",
+        "public-health"
       ]
     },
     {
